@@ -1,0 +1,10 @@
+1º Utilizar o arquivo Startup:
+	1.1º: Crie um arquivo startup e facha a chamada pelo arquivo Program
+
+2º Apagar a View Privacy:
+
+3º Limpar o Conteudo da View Index.cshtml
+
+4º Limpar a informação do método HomeController
+
+5º Modificar o Arquivo _Layout
