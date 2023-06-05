@@ -1,4 +1,7 @@
-﻿namespace MVC_2022;
+﻿using Microsoft.EntityFrameworkCore;
+using MVC_2022.Context;
+
+namespace MVC_2022;
 
 public class Startup
 {
@@ -12,6 +15,9 @@ public class Startup
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddDbContext<AppDbContext>(options =>
+         options.UseSqlServer(Configuration.GetConnectionString("DefualtConnection")));
+
         services.AddControllersWithViews();
     }
 

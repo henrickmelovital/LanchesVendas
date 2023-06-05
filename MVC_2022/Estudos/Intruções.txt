@@ -8,3 +8,16 @@
 4º Limpar a informação do método HomeController
 
 5º Modificar o Arquivo _Layout
+
+================================================================================
+
+Gerenciando Certificados auto assinados
+
+dotnet dev-certs https --check
+verifica a existência do certificado de desenvolvimento, mas não executa nenhuma ação.
+
+dotnet dev-certs https
+gera um certificado auto assinado para https no desenvolvimento
+
+dotner dev-certs https --trust
+confia no certificado na máquina local
