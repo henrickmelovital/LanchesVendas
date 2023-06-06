@@ -21,3 +21,26 @@ gera um certificado auto assinado para https no desenvolvimento
 
 dotner dev-certs https --trust
 confia no certificado na máquina local
+
+================================================================================
+
+DATA ANNOTATIONS
+
+[Required] = faz com que o campo na tabela não seja nulo (NOT NULL)
+[Required(ErrorMenssage = "texto" )] = permite crir uma excessão de erro
+[Display(Name = "")] = Trás um nome dentro view quando o atributos for envocado. 
+[MinLength()] = minimo de caracteres
+[MaxLength()] = máximo de caracteres
+[EmailAddress] = valida um email
+
+================================================================================
+
+MIGRATIONS
+
+1- Criar Migração: add-migration 'NomeDaMigração'[options]
+
+2- Aplicar Migração: update-database[options]
+
+3- Remover Migração: remove-migration
+
+

@@ -1,0 +1,9 @@
+﻿1º Temos como alternativa usar o código Stratup e Program;
+
+2º Limpar o código dentro do arquivo HomeController;
+
+3º Deletar a view Privacy
+
+4º Remover o Código da ViewIndex;
+
+5º Remover o código que da barra no _Layout.cshtml
