@@ -1,0 +1,12 @@
+﻿1º Procurar por bootstrap 5.1 carousel ;
+
+2º Colocar o carousel 'With Controls';
+
+3º Colocar arquivos de imagem, video, jpeg, etc dentro da pasta wwwroot;
+
+4º Criação de uma partialview: 
+	4.1º: Fica denro da pasta View
+	4.2º: Comecar com '_' o nome da View;
+	4.3º: Mudar os 'id' e 'data-bs-target' para o nome da aplicação;
+	4.4º: Chamada da parital view '<partial name=""/>
+

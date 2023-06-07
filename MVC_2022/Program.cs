@@ -10,7 +10,6 @@ builder.Services.AddControllersWithViews();
 //{
 //    services.AddDbContext<AppDbContext>(options =>
 //    options.UseSqlServer(Configuration.GetConnectionString("DefualtConnection")));
-//    services.AddControllersWithViews();
 //}
 
 var app = builder.Build();
