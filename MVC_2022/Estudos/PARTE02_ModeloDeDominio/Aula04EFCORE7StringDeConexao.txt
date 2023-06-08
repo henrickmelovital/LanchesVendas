@@ -1,0 +1,21 @@
+﻿1º: Primcipal mudança ao usar EF Core 7.0
+	1.1º: Alteração da classe 'System.Data.SqlClient'
+
+2º: Nas versões anteriores do EF Core as string de conexão 'SqlClient' 
+usavam a propriedade 'Encrypt=False' por padrão, e, isso permitia conexões com máquinas de desenvolvimento onde o servidor local não possuia um certificado válido.
+
+3º A partir do EF Core 7 as string de conexões SqlClient utilizam por padrão Encrypt=True e isso significa que:
+	3.1º: o Servidor deve ser configurado com um certificado válido;
+	3.2º: O cliente deve confiar neste certificado;
+Se essas condições não forem atendidas, será lançada um SqlException;
+
+4º: Existem três maneiras de resolver ou contornar o problema se ele surgir:
+	4.1º: Instalar um certificado válido no servidor;
+		4.1.1º: Note que este é um processo complexo e requer a obtenção de um certificado e a garantia de que ele seja assinado por um autoridade confiável para o cliente;
+	4.2º: Se o servidor tiver um certificado, mas não for confiável para o cliente, então defina a propriedade 'TrustServerCertificate=True' para ignorar os mecanismos normais de confiança;
+	4.3º: Adicionar explicitamente 'Encrypt=False' á string de conexão;
+
+5º: Gerenciando certificados Auto Assinados:
+	5.1º 'dotnet dev-certs https --check': Verifica a existência do certificado de desenvolvimento, mas não executa nenhuma ação;
+	5.2º 'dotnet dev-certs https': Gera um certificado auto assinado para HTTPS no ambiente de desenvolvimento;
+	5.3º 'dotnet dev-certs https --trust': Confia no certificado na máquina local;
