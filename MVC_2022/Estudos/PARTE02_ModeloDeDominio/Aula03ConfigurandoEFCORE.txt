@@ -1,0 +1,13 @@
+﻿1º Instalação dos Três Pacotes:
+	1.1º: Microsoft.EntityFrameworkCore.SqlServer;
+	1.2º: Microsoft.EntityFrameworkCore.Tools;
+	1.3º: Microsoft.EntityFrameworkCore.Design;
+
+2º Criar a classe 'Context':
+	2.1º: Dentro da pasta 'Context' uma classe AppDbContext.cs
+	2.2º: Criar um construtor para classe;
+	2.3º: Para cada Model, Criar um DbSet<>;
+
+3º: Criar a ConnectionString dentro do arquivo appsetting.json;
+
+4º: Criar o servico de configuração dentro da classe program ou stratup;

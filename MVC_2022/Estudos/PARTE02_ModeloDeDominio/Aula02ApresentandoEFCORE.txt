@@ -1,0 +1,13 @@
+﻿EF CORE - Funcionamento
+
+1º DbContext(Database):
+	1.1º: Conexão com o Database
+	1.2º: Operação com dados
+	1.3º: Consulta e Persistência
+	1.4º: Mapeamento de dados
+	1.5º: Gestão de transações
+
+2º DbSet<T>(Tables):
+	2.1º: Coleção para entidade do modelo
+	2.2º: Coleção na memória
+	2.3º: Para persistir usar SaveChanges()

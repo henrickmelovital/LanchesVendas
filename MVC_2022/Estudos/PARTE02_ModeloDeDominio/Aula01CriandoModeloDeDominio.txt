@@ -1,0 +1,19 @@
+﻿Convenções usadas pelo EFCORE
+
+1º: A propriedade Id ou <nome_entidade>Id vai gerar uma chave primária na tabela;
+
+2º: As propriedades definidas na classe irão gerar colunas com o mesmo nome na tabela;
+
+3º: O tipo de dados das colunas geradas a partir dos tipos definidos nas propriedades depende do provedor de banco de dados usados;
+
+C#			SQL Server
+int			int
+string		nvarchar(Max)
+decimal		decimal(18, 2)
+bool		bit 
+datetime	datetime
+
+4º Criar os atributos dentro da classe 'Models':
+	4.1º: Relacionamento Um-para-muitos:
+		4.1.1º: Classe um com uma lista da classe muitos
+		4.1.2º: Id da outra cetegoria e um virtual do mesmo método;
