@@ -1,0 +1,8 @@
+﻿1º: Propriedades do tipo String
+	1.1º: [StringLength(xx), ErrorMessage = "Texto de mensagem de erro"]
+	1.2º: [Required(ErrorMessage = "Texto da mensagem de erro")]
+	1.3º: [Display(Name = "Textp a ser exibido")]
+
+2º: Propriedades do tipo decimal
+	2.1º: [Column(TypeName = "Decimal(10,2)")]
+	2.2º: [Range(1,999.99, ErrorMessage = "Texto a ser exibido")]
