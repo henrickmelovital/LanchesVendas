@@ -1,0 +1,36 @@
+﻿Data Annotations:
+
+1º São atributos que podem ser aplicados a classes e seus membros para realizar as seguintes tarefas:
+	1.1º: Definir regras de validação para o modelo;
+	1.2º: Definir como os dados devem ser exibidos na interface;
+	1.3º: Especificar o relacionamento entre as entidades do modelo;
+	1.4º: Sobrescrever as convenções padrão do Entity Framework Core;
+
+2º: Namespace
+	2.1º: System.ComponentModel.DataAnnotations;
+	2.2º: Syste,.ComponentModel.DataAnnotations.Schema;
+
+3º: Impor regras de validação na View
+	3.1º: Definir os ãtributos nas propriedade das classes do modelo de domínio;
+	3.2º: Definir os critérios de validação em um local (Model) e isso produz os efeitos em qualquer lugar que o Model for usado;
+	3.3º: A validação é aplicada no modelo de domínio através de definição de atribtuos e não na interface do usuário;
+
+4º Atributos de validação do modelo:
+	4.1º: 'Required' Especifica uma propriedade como obrigatória e não aceita null no banco de dados;
+	4.2º: 'Range' Especifica as restrições de intervalo numérico para o valor de um campo de dados;
+	4.3º: 'EmailAddress' Valida o formato de um endereço de e-mail;
+	4.4º: 'Phone' Valida formato de telefon;
+	4.5º: 'MinLenght' Especifica o comprimento mínimo dos dados de cadeia de caracteres da propriedade;
+	4.6º: 'MaxLenght' Especifica o comprimento máximo dos dados de cadeia de caracteres da propriedade;
+	4.7º: 'StringLenght' Especifica o comprimento mínimo e máximo de caracteres permitidos na propriedade;
+	4.8º: 'RegularExpression' Permitir definir expressões regulares para validações especificas;
+	4.9º: 'Display' Especifica como os campos de dados são exibidos e formatados na View;
+	4.10º: 'DisplayFormat' Aplica um formato definido a uma propriedade que será exibido na View;
+
+5º Atributos de modelagem de dados:
+	5.1º: 'Key(*)' Identifica a propriedae como uma chave primária na tabela
+	5.2º: 'Table' Define o nome da tabela para a qual a classe será mapeada
+	5.3º: 'Column' Define a coluna na tabela para a qual a propriedade será mapeada
+	5.4º: 'DataType(*)' Associa um tipo de dados adicional a uma propriedade
+	5.5º: 'ForeignKey' Especifica que a propriedade é usada como uma chave estrangeira
+	5.6º: 'NotMapped'  Exclui a propriedade do mapeamento

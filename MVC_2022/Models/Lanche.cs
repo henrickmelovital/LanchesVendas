@@ -3,9 +3,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVC_2022.Models
 {
-    [Table("Lanche")]
+    [Table("Lanches")]
     public class Lanche
     {
+        [Key]
         public int LancheId { get; set; }
 
         [Required(ErrorMessage = "O nome do lanche deve ser informado")]
