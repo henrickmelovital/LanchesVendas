@@ -1,1 +1,24 @@
-﻿
+﻿Populando as tabelas com dados iniciais
+
+1º: Incluir dados manualmente usando a instrução INSERT INTO;
+
+2º: Criar usar o método OnModelCreating do arquivo de contexto e definir o código usando a propriedade HasData do EF Core para preencher as tabelas com dados
+
+3º: Criar um método estático e definir o código para incluir dados usando e método AddRange() do EF Core;
+
+4º: Criar uma migração vazia usando o migration e usar os métodos Up() e Down() e definir nestes métodos as instruções INSERT INTO para incluir dados nas tabelas (Método usando)
+
+Populando as tabelas com dados iniciais: Migrations
+
+1º: Criar uma nova migração vazia para popular as tabelas;
+	1.1º: Será criado o arquivo de script contendo as métodos Up() e Down() vazios
+
+2º: Incluir no método Up() as instrições INSERT INTO para popular as tabelas;
+
+3º: Incluir no método Down() as instruções DELETE FROM para desfazer a migração
+
+4º: Existe um relacionamento Um-para-Muitos entre as tabelas Categorias e Lanches
+	4.1º: As chaves primárias das tabelas são tipo Identity (incremental) 
+	4.2º: Vamos criar duas migrações;
+	4.3º: Uma migração para incluir dados na tabela Categorias;
+	4.4º: Uma migração para incluir dados na tabela Lanches;
