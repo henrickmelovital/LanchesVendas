@@ -6,11 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-//void ConfigureServices(IServiceCollection services)
-//{
-//    services.AddDbContext<AppDbContext>(options =>
-//    options.UseSqlServer(Configuration.GetConnectionString("DefualtConnection")));
-//}
+var connectionString = builder.Configuration.GetConnectionString("LanchesMac") ??
+    throw new InvalidOperationException("Connection string 'LanchesMac' not found.");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(connectionString));
 
 var app = builder.Build();
 
