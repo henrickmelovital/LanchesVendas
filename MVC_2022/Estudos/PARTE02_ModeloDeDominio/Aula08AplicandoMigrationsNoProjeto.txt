@@ -1,0 +1,3 @@
+﻿1º Criar a migração:
+	1.1º: add-migration 'NomeDaMigrations'
+	1.2º: update-database
