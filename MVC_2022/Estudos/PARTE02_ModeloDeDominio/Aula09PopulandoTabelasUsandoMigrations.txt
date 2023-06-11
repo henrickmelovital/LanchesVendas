@@ -22,3 +22,4 @@ Populando as tabelas com dados iniciais: Migrations
 	4.2º: Vamos criar duas migrações;
 	4.3º: Uma migração para incluir dados na tabela Categorias;
 	4.4º: Uma migração para incluir dados na tabela Lanches;
+

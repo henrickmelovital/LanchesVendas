@@ -1,0 +1,14 @@
+﻿1º: Criar uma nova migração para popular a tabela Categoria
+	1.1º: add-migration PopularCategorias
+
+2º: Incluir no método Up() as instruções INSERT INTO para popular as tabelas;
+
+3º: Incluir no método Down() as instruções DELETE FROM para desfazer a migração
+
+Populando
+
+1º: Criar uma nova Migration com add-migration 'Nome do migration'
+
+2º: Depois de fazer a migration, escrever o script de envio de dados no arquivo gerado com o nome da migration
+
+3º: fazer um update na base de dados com 'update-database'

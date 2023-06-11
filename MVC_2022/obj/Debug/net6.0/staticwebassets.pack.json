@@ -25,6 +25,38 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheeseburger1 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\cheeseburger1 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheeseburger1.jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\cheeseburger1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheesesalada1 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\cheesesalada1 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheesesalada1.jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\cheesesalada1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\lanchenatural (1).jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\lanchenatural (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\lanchenatural.jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\lanchenatural.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\mistoquente4 (1).jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\mistoquente4 (1).jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\mistoquente4.jpg",
+      "PackagePath": "staticwebassets\\images\\imagensDoInsert\\mistoquente4.jpg"
+    },
+    {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

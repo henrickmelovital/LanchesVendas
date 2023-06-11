@@ -33,15 +33,13 @@ namespace MVC_2022.Models
         public decimal Preco { get; set; }
 
         [Display(Name = "Caminho Imagem Normal")]
-        [StringLength(200, ErrorMessage ="O {0} deve ter no máximo {1} caracteres")]
         public string ImagemUrl { get; set; }
 
         [Display(Name = "Caminho Imagem Miniatura")]
-        [StringLength(200, ErrorMessage = "O {0} deve ter no máximo {1} caracteres")]
-        public string ImagemThumbnaiUrl { get; set; }
+        public string ImagemThumbnailUrl { get; set; }
 
         [Display (Name = "Preferido?")]
-        public bool IsLachePreferido { get; set; }
+        public bool IsLanchePreferido { get; set; }
 
         [Display (Name = "Estoque")]
         public bool EmEstoque { get; set; }

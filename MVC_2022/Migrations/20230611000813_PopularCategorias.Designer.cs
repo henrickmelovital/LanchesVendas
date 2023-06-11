@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVC_2022.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230609154315_MigracaoInicial")]
-    partial class MigracaoInicial
+    [Migration("20230611000813_PopularCategorias")]
+    partial class PopularCategorias
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -71,15 +71,13 @@ namespace MVC_2022.Migrations
                     b.Property<bool>("EmEstoque")
                         .HasColumnType("bit");
 
-                    b.Property<string>("ImagemThumbnaiUrl")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                    b.Property<string>("ImagemThumbnailUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImagemUrl")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsLachePreferido")
+                    b.Property<bool>("IsLanchePreferido")
                         .HasColumnType("bit");
 
                     b.Property<string>("Nome")
