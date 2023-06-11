@@ -7,5 +7,14 @@
 	2.3º: Fazer a instância do AppDbContext;
 	2.4º: Criar o construtor de AppDbContext;
 
+===============================================================
+
+Padrão Rository - Lanches
+
+1º: A assinatura da propriedade somente leitura Lanches que retorna uma lista de objetos Lanche;
+
+2º: A assinatura da propriedade somente leitura LanchesPreferidos que retorna uma lista de objetos Lanche onde iremos filtrar apenas os lanches preferidos;
+
+3º: A assinatura do método GetLancheById(int lancheId) que retorna um objeto Lanche pelo seu Identidicador LancheId
 
 	
