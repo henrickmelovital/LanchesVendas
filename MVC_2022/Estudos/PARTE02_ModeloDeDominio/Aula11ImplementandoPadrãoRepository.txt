@@ -1,0 +1,11 @@
+﻿1º: Criar uma interface:
+	1.1º: ICategoriaRepository (somente para leitura)
+
+2º: Criar uma classe concentra:
+	2.1º: CategoriaRepository
+	2.2º: Fazer a instância do ICategoriaRepository;
+	2.3º: Fazer a instância do AppDbContext;
+	2.4º: Criar o construtor de AppDbContext;
+
+
+	

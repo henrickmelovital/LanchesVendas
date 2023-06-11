@@ -8,7 +8,7 @@
 
 2º: Namespace
 	2.1º: System.ComponentModel.DataAnnotations;
-	2.2º: Syste,.ComponentModel.DataAnnotations.Schema;
+	2.2º: System.ComponentModel.DataAnnotations.Schema;
 
 3º: Impor regras de validação na View
 	3.1º: Definir os ãtributos nas propriedade das classes do modelo de domínio;
@@ -19,7 +19,7 @@
 	4.1º: 'Required' Especifica uma propriedade como obrigatória e não aceita null no banco de dados;
 	4.2º: 'Range' Especifica as restrições de intervalo numérico para o valor de um campo de dados;
 	4.3º: 'EmailAddress' Valida o formato de um endereço de e-mail;
-	4.4º: 'Phone' Valida formato de telefon;
+	4.4º: 'Phone' Valida formato de telefone;
 	4.5º: 'MinLenght' Especifica o comprimento mínimo dos dados de cadeia de caracteres da propriedade;
 	4.6º: 'MaxLenght' Especifica o comprimento máximo dos dados de cadeia de caracteres da propriedade;
 	4.7º: 'StringLenght' Especifica o comprimento mínimo e máximo de caracteres permitidos na propriedade;
