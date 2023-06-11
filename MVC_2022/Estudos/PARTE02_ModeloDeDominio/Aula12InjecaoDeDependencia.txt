@@ -1,0 +1,30 @@
+﻿Injeção de Dependência:
+
+1º: A injeção de dependência (cocnhecida como DI) é um padrão de projeto no qual um objeto não cria suas classes dependetes, mas as requisita;
+
+2º: É uma técnica pela qual um objeto fornece as dependências de outro objeto;
+
+3º: A plataforma .NET da suporte ao padrão de projeto da injeção de dependência (DI), que é uma técnica para obter inversão de controle (IOC) entre classes e suas depedências; 
+
+4º: A plataforma .NET implementa o padrão da injeção de dependência através de um contêiner nativo chamado Contêiner DI que realiza e aplica a injeção de dependência após ser feita a configuração;
+
+Injeção de Depedência: Escopo (vida útil) dos serviços
+
+Podemos usar três escopos com o contêiner DI padrão. Esses escopos afetam como o serviço é resolvido e descartado pelo provedor de serviços.
+
+1º Transient: services.AddTransient<,>
+	Uma nova instância do serviço é criado cada vez que um serviço é solicitado do provedor de serviços. Se o serviço for descartável, o escopo do serviço monitorará todas as instâncias do serviços e destruirá todas as instâncias do serviço criadas nesse escopo quando o escopo do serviço for descartado;
+
+2º Scoped: services.AddScoped<,>
+	Uma nova instância do serviço é criada em cada request. A cada requisição temos uma nova instância do serviço. Se o serviço for descatável, ele será descartado quando o escopo do serviço for descartado.
+
+3º Singleton: services.AddSingleto<,>
+	Apenas uma instância do serviço é criada se ainda não estiver registrada como uma instância. Um objeto do serviço é criaa e fornecida para todas as requisições. Todas as requisições obtém o mesmo objeto.
+
+========================================================================================================================================================================================================================================================================================================================================
+
+1º Registrar o serviço das classes e interfaces dentro da classe Program.cs	
+
+
+
+
