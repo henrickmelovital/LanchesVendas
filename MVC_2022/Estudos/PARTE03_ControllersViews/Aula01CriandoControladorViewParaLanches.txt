@@ -1,0 +1,6 @@
+﻿1º: Criar um controller 'LancheController';
+
+2º: Criar uma instância de ILancheRepository dentro do LancheController;
+
+3º: Criar uma RazorView com dados;
+
