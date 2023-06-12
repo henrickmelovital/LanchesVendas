@@ -1,0 +1,5 @@
+﻿Views Fortemente tipada
+
+1º Alterar o código das Views:
+	1.1º: diretiva @model define o modelo usando na view
+	1.2º: variável Modelo representa o tipo definido na view
