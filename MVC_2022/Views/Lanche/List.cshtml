@@ -2,11 +2,21 @@
 
 <div>
     <h2>
-        Todos os Lanches
+        @ViewData["Titulo"];
     </h2>
 </div>
 
-@foreach(var lanche in Model)
+<hr />
+
+<h3>@ViewBag.Total @ViewBag.TotalLanches</h3>
+<hr />
+
+<h3>
+    @TempData["Nome"]
+</h3>
+<h2>@ViewData["Data"]</h2>
+
+@foreach (var lanche in Model)
 {
     <div>
         <h4>@lanche.Nome</h4>
