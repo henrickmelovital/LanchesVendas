@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Estudos\PARTE03_ControllersViews\" />
     <Folder Include="wwwroot\images\imagensDoInsert\" />
   </ItemGroup>
 
