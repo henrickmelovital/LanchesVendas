@@ -1,0 +1,31 @@
+﻿ViewModel - Definição:
+
+1º: É um padrão de projeto que permite separa as responsabilidades do modelo de domínio dos modelos que atendem as Views;
+
+2º: Representa o conjunto de uma ou mais entidades do Modelo de Domínio e de outras informações que serão exibidas em uma View
+
+3º: Contém apenas as propriedades que serão representadas na View
+
+4º: Pode possuir regras específicas de validação (Data Annotations)
+
+5º: Pode conter múltiplas entidades ou objetos dos modelos de domínio;
+
+6º: Contém a lógica da interface do usuário;
+
+7º: Contém somente dados e comportamentos relacionados às Views;
+
+ViewModel - Utilização:
+
+1º: Gerenciar ou criar listas suspensas para uma entidades;
+
+2º: Criar Views Mestre-Detalhes
+
+3º: Usadas em carrinhos de compras;
+
+4º: Usadas em paginação de dados;
+
+5º: Usadas para implementar o Login e o Registro;
+
+Permitir isolar e desacoplar o modelo de dominio da lógica exibição da View;
+
+Se exite informações no modelo de domínio que somente serão usadas nas Views crie uma ViewModel com essas informações separando as responsabilidades
