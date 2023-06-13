@@ -1,0 +1,3 @@
+﻿1º: _ViewStart: Responsável pelo Layout principal da página;
+
+2º: _ViewImport: Responsável pelo imports das telas, comunicação com 

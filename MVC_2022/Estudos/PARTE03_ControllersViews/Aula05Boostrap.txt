@@ -1,0 +1,11 @@
+﻿Bootstrap Grid:
+
+1º: 'col-xs' dispositivos extra pequenos - largura da tela inferior a 576pc;
+
+2º: 'col-sm' dispositivos pequenos - largura da tela igual ou superior a 576px;
+
+3º: 'col-md' dispositivos médios - largura da tela igual ou superior a 768px;
+
+4º: 'col-lg' dispositivos grandes - largura da tela igual ou superior a 992px;
+
+5º: 'col-xl' xlarge devices - largura da tela igual ou superior a 1200px;
