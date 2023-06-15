@@ -1,4 +1,27 @@
-﻿1º: Criar uma interface:
+﻿Mostrando o Padrão Repository:
+
+1º: Fluxo do Request na aplicação MVC usando EF CORE:
+	1.1º: Forte acoplamento com a ferramenta ORM;
+	1.2º: Lógica de acesso a dados no Controller;
+
+2º: Fluxo do Request na aplicação MVC usando o padrão Repository:
+	2.1º: Desacopla e centraliza a lógica de acesso aos dados da aplicação; 
+	2.2º: O padrão Repository cria uma camada de abstração entre a camada de acesso aos dados e camada da lógica de negócios da aplicação;
+
+3º: Padrão Repository - Vantagens
+	3.1º: Desacopla a sua aplicação da lógica de acesso a dados;
+	3.2º: Centraliza a lógica de acesso a dados;
+	3.3º: Facilita a realização de testes;
+	3.4º: Facilita a manutenção do código;
+	3.5º: Minimza a duplicação de código nas consultas e comandos;
+
+4º: Padrão Repository - Implantação:
+	4.1º: Criar uma interface com o contrato da lógica de acesso aos dados; 
+	4.2º: Criar uma classe concreta que implementa o contrat da interface;
+
+=================================================================
+
+1º: Criar uma interface:
 	1.1º: ICategoriaRepository (somente para leitura)
 
 2º: Criar uma classe concentra:
