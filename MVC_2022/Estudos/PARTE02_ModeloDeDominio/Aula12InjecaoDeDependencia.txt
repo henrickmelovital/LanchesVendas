@@ -1,6 +1,6 @@
 ﻿Injeção de Dependência:
 
-1º: A injeção de dependência (cocnhecida como DI) é um padrão de projeto no qual um objeto não cria suas classes dependetes, mas as requisita;
+1º: A injeção de dependência (conhecida como DI) é um padrão de projeto no qual um objeto não cria suas classes dependetes, mas as requisita;
 
 2º: É uma técnica pela qual um objeto fornece as dependências de outro objeto;
 
