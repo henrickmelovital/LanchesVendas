@@ -21,6 +21,21 @@
 
 =================================================================
 
+1º: Padrão Repository - Categorias:
+	1.1º: Propriedades categorias somente leitura que retorna uma lista de objetos Categoria
+	1.2º: IEnumerable - Expõe um enumerador que dá suporte a uma interação simples em uma coleção não genérica;
+	1.3º: Funciona apenas como leitura;
+	1.4º: Somente percorre a coleção sequencialmente
+	1.5º: Usamos a injeção de dependência nativa da ASP.NET Core para injetar uma instânci ado serviço do contexto representado pela classe AppDbContext no contrutor da classe;
+
+2º: Padrão Repository = Lanches:
+	2.1º: A assinatura da propriedade somente leitura Lanches que retorna uma lista de objetos Lanche
+	2.2º: A assinatura da propriedade somente leitura LanchesPreferidos que retorna uma lista de objetos Lanche onde iremos filtrar os lanches preferidos;
+	2.3º: A assinatura do método GetLancheById (int lancheId) que retornam um objeto Lache pelo seu identificador LancheId;
+
+
+====================================================================
+
 1º: Criar uma interface:
 	1.1º: ICategoriaRepository (somente para leitura)
 
