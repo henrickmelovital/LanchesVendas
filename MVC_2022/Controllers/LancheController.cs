@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MVC_2022.Repositories.Interface;
+using MVC_2022.ViewModels;
 
 namespace MVC_2022.Controllers
 {
@@ -15,17 +16,21 @@ namespace MVC_2022.Controllers
 
         public IActionResult List()
         {
-            ViewData["Titulo"] = "Todo os Lanches";
-            ViewData["Data"] = DateTime.Now;
-            
-            var lanches = _lancheRepository.Lanches;
-            var totalLanches = lanches.Count();
+            //ViewData["Titulo"] = "Todo os Lanches";
+            //ViewData["Data"] = DateTime.Now;
 
-            ViewBag.Total = "Total de Lanches: ";
-            ViewBag.TotalLanches = totalLanches;
+            //var lanches = _lancheRepository.Lanches;
+            //var totalLanches = lanches.Count();
+
+            //ViewBag.Total = "Total de Lanches: ";
+            //ViewBag.TotalLanches = totalLanches;
 
 
-            return View(lanches);
+            //return View(lanches);
+            var lancheListViewModel = new LancheListViewModel();
+            lancheListViewModel.Lanches = _lancheRepository.Lanches;
+            lancheListViewModel.CategoriaAtual = "Categoria Atual";
+            return View(lancheListViewModel);
         }
     }
 }

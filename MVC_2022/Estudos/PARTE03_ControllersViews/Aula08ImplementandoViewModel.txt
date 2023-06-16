@@ -1,0 +1,9 @@
+﻿1º: Criar uma pasta chamada ViewModels;
+
+2º: Criar uma classe <nome>ViewModel;
+
+3º: Implementar o código chamando a ViewModel dentro do controlador;
+
+4º: Colocar o @using dentro de '_ViewImports' (Referenciando a ViewModel);
+
+5º: Ajudar a View List;
