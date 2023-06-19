@@ -1,0 +1,50 @@
+﻿1º PartialView - Definição
+	1.1º: É uma view que é renderizada em outra view;
+	1.2º: São usadas para encapsular a lógica reutilizada nas view permitindo simplificar a complexidade das view;
+	2.3º: Podem ser usadas em múltiplas view onde é necessário uma lógica similar evitando assim duplicidade de código.
+
+2º: Pincipais usos:
+	2.1º: Renderizar menus de navegação;
+	2.2º: Desenvolver formulários de entrada comuns;
+	2.3º: Renderizar dados comuns às View(reduz duplicação);
+	2.3º: Dividir arquivos de marcação grandes em arquivos menores;
+
+3º: Definições:
+	3.1º: Possuem a extensão .cshtml;
+	3.2º: Podem ser retornadas em um método Action (ViewResult)
+	3.3º: São iguais as viwes (a nível de código)
+	3.4º: São renderizadas de forma diferente (não executam o arquivo _ViewStrat.cshtml)
+	3.5º: São armazenadas na pasta Views ou na pasta Shared dentro da pasta Views;
+	3.6º: O nome do arquivo de uma partial view começa com um sublinhado(_);
+
+4º Partial View - Exemplo:
+	4.1º: Uma partial view criada em uma pasta especifica das views de um controlador pode ser usada por todas as views dessa pasta;
+	4.2º: Uma parial view criada na pasta Shared (dentro da pasta Views) pode ser usada por todas as views existentes na pasta Views;
+
+5º: PartialView - Utilização: Tag Helper 
+	5.1º: '<partial name="_partialName"/>' Tag Helper partial renderiza o conteúdo de forma assíncrona;
+	5.2º: '<partial name="~/Pages/_PartialName.cshtml"/>' Ao definir uma extensão no arquivo da partial view Tag Helper referencia uma partial view que deve estar na mesma pasta que o arquivo que chama a partial view.
+
+6º Partial View - Utilização : Html Helper I
+	6.1º: '@await Html.PartialAsync("_PartialName");'
+	6.2º: '@await Html.RenderPartialAsync("_PartialName");
+	6.3º: Usar o Html Helper PartialAsync ou RenderPartialAsync;
+
+7º Partial View - Utilização : Html Helper II
+	7.1º: '@await Html.PartialAsync("_PartialName.cshtml");
+	7.2º: '@await Html.RenderPartiaAsync("_PartialName.cshtml");
+	7.3º: Quando a extensão do arquivo está presente, o HTML Helper faz referência a uma partial view que deve estar na mesmo pasta que o arquivo de marcação que chama a partial view;
+
+8º: Partial View - Utilização : Acessando dados:
+	8.1º: '<partial name="_PartialName" for="Model"/>
+	8.2º: '@await Html.PartialAsync("_PartialName", model);
+	8.3º: '@await html.RenderPartialAsync("_PartialName", model);
+	8.4º: Quando uma partial view é instanciada, ela recebe uma cópia do dicionário ViewData do pai;
+	8.5º: As atualizações feitas nos dados dentro da partial view não são persistidas na view pai;
+	8.6º: As alterações no ViewData em uma partial view são perdidas quando a partial view retorna;
+
+9º: Criando a Partial View:
+	9.1º: Dentro da pasta Shared criar o arquivo da partialview .cshtml
+	9.2º: Mudar o código para partial view;
+	9.3º: Definir o Model para ser usado na partial view;
+	9.4º: Intanciar a partial view dentro da view desejada;
