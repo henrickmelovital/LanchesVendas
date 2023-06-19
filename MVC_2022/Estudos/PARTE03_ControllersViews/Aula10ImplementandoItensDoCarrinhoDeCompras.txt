@@ -1,0 +1,6 @@
+﻿1º Carrinho de Compras:
+	1.1º: Criar classe CarrinhoCompraItem na pasta Models que representaum produto que o usuário seleciona (lanche, bebida, sobremesa);
+	1.2º: Incluir a definição da entidade no arquivo AppDbContext definindo uma propriedade DbSet<> para expressar o mapeamento entre a entidade e a tabela;
+	1.3º: Usar o recurso Migrations do EF Core para atualizar o esquema do banco de dados criando a tabela CarrinhoCompraItens usando os comandos:
+		1.3.1º: add-migration CarrinhoCompraItem;
+		1.3.2º: update-database;
