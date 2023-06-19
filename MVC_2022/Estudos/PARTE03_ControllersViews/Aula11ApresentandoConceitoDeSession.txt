@@ -1,0 +1,14 @@
+﻿1º: Apresentando o conceito de Session:
+	1.1º: HTTP - protocolo sem estado;
+	1.2º: ASP .NET CORE - Session - Microsoft.AspNetCore.Session;
+	1.3º: Com base em um dicionário ou tabela hash no servidor, o estado da sessão persiste os dados através das requisições de um navegador;
+	1.4º: O ASP .NET CORE mantém o estado da sessão, dando ao cliente um cookie que contém o ID da sessão, que é envidado ao servidor com cada solicitação;
+	1.5º: O servidor mantém uma sessão por tempo limitado após a última requisição;
+	1.6º: Você pode definir o tempo limite da sessão ou usar o valor padrão que é 20 minutos;
+	1.7º: O estado da sessão é ideal para armazenar dados do usuário especificos de uma determinada sessão;
+	1.8º: Dados são excluidos do cache: Sessão expira ou Session.Clear();
+
+2º Configurando Sessão (Classe Stratup deve contar):
+	2.1º: Qualquer um dos caches de memória IDistributedCache;
+	2.2º: Uma chamada a AddSession em ConfigureServices();
+	2.3º: A chamada UseSession em COnfigure();
