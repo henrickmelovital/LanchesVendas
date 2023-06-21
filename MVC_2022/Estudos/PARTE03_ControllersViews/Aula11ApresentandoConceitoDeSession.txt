@@ -16,4 +16,9 @@
 Configurando a Session e o uso de HttpContext:
 
 3º: Para habilitar a middleware da Sessão temos que definir na classe Startup:
-	3.1º: Ativar o uso do cahce em memória através da interface IMemoryCache() usanod o método AddMemoryCache(), no método 
+	3.1º: Ativar o uso do cahce em memória através da interface IMemoryCache() usando o método AddMemoryCache(), no método AddMemoryCache(); no método ConfigureServices;
+	3.2º: Invocar o método AddSession() no método ConfigureServices;
+	3.3º: Invocar o UserSession() no método Configure;
+
+4º Para acessar os recursos do HttpContext em um serviço:
+	4.1º: Registrar a interface IHttpContextAcessor() para injeção de dependência no método ConfigureServices();

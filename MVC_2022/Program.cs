@@ -19,6 +19,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepositorio>();
 
+// Registro a interface IHttpContextAcessor()
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+// Ativar o uso do cahce em memória através da interface IMemoryCache():
+builder.Services.AddMemoryCache();
+
+// Invocando o método AddSession():
+builder.Services.AddSession();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +44,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+// Invocar o UserSession():
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",
