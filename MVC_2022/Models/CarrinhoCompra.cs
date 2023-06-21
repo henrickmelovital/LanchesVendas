@@ -38,7 +38,25 @@ namespace MVC_2022.Models
 
         public void AdicionarAoCarrinho(Lanche lanche)
         {
+            var carrinhoCompraItem = _context.CarrinhoCompraItens.SingleOrDefault
+                (S => S.Lanche.LancheId == lanche.LancheId && 
+                S.CarrinhoCompraId == CarrinhoCompraId);
 
+            if(carrinhoCompraItem == null)
+            {
+                carrinhoCompraItem = new CarrinhoCompraItem
+                {
+                    CarrinhoCompraId = CarrinhoCompraId,
+                    Lanche = lanche,
+                    Quantidade = 1
+                };
+                _context.CarrinhoCompraItens.Add(carrinhoCompraItem);
+            }
+            else
+            {
+                carrinhoCompraItem.Quantidade++;
+            }
+            _context.SaveChanges();
         }
     }
 }
