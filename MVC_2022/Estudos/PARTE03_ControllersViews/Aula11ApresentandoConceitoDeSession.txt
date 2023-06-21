@@ -12,3 +12,8 @@
 	2.1º: Qualquer um dos caches de memória IDistributedCache;
 	2.2º: Uma chamada a AddSession em ConfigureServices();
 	2.3º: A chamada UseSession em COnfigure();
+
+Configurando a Session e o uso de HttpContext:
+
+3º: Para habilitar a middleware da Sessão temos que definir na classe Startup:
+	3.1º: Ativar o uso do cahce em memória através da interface IMemoryCache() usanod o método AddMemoryCache(), no método 
