@@ -1,0 +1,4 @@
+﻿Carrinho de Compras:
+
+1º: Classe CarrinhoCompraItem -> Representa um item ou lanche selecionado;
+2º: Classe CarrinhoCompra -> Representa uma coleção de itens selecionados;
