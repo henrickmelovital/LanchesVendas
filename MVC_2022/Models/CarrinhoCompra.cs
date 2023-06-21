@@ -1,4 +1,5 @@
-﻿using MVC_2022.Context;
+﻿using Microsoft.EntityFrameworkCore;
+using MVC_2022.Context;
 using System.Xml.Serialization;
 
 namespace MVC_2022.Models
@@ -39,10 +40,10 @@ namespace MVC_2022.Models
         public void AdicionarAoCarrinho(Lanche lanche)
         {
             var carrinhoCompraItem = _context.CarrinhoCompraItens.SingleOrDefault
-                (S => S.Lanche.LancheId == lanche.LancheId && 
+                (S => S.Lanche.LancheId == lanche.LancheId &&
                 S.CarrinhoCompraId == CarrinhoCompraId);
 
-            if(carrinhoCompraItem == null)
+            if (carrinhoCompraItem == null)
             {
                 carrinhoCompraItem = new CarrinhoCompraItem
                 {
@@ -69,7 +70,7 @@ namespace MVC_2022.Models
 
             if (carrinhoCompraItem != null)
             {
-                if(carrinhoCompraItem.Quantidade > 1)
+                if (carrinhoCompraItem.Quantidade > 1)
                 {
                     carrinhoCompraItem.Quantidade--;
                     quantidadeLocal = carrinhoCompraItem.Quantidade;
@@ -81,6 +82,34 @@ namespace MVC_2022.Models
             }
             _context.SaveChanges();
             return quantidadeLocal;
+        }
+
+        public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
+        {
+            return CarrinhoCompraItems ??
+                (CarrinhoCompraItems =
+                    _context.CarrinhoCompraItens
+                    .Where(C => C.CarrinhoCompraId == CarrinhoCompraId)
+                    .Include(S => S.Lanche)
+                    .ToList());
+        }
+
+        public void LimparCarrinho()
+        {
+            var carrinhoItens = _context.CarrinhoCompraItens
+                .Where(carrinho => carrinho.CarrinhoCompraId == CarrinhoCompraId);
+
+            _context.CarrinhoCompraItens.RemoveRange(carrinhoItens);
+            _context.SaveChanges();
+        }
+
+        public decimal GetCarrinhoCompraTotal()
+        {
+            var total = _context.CarrinhoCompraItens
+                .Where(C => C.CarrinhoCompraId == CarrinhoCompraId)
+                .Select(C => C.Lanche.Preco * C.Quantidade).Sum();
+
+            return total;
         }
     }
 }
