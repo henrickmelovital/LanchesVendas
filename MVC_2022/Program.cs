@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using MVC_2022.Context;
+using MVC_2022.Models;
 using MVC_2022.Repositories;
 using MVC_2022.Repositories.Interface;
 
@@ -21,6 +22,9 @@ builder.Services.AddTransient<ICategoriaRepository, CategoriaRepositorio>();
 
 // Registro a interface IHttpContextAcessor()
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+// Registrando o serviço do carrinho de compra 
+builder.Services.AddScoped(SP => CarrinhoCompra.GetCarrinho(SP));
 
 // Ativar o uso do cahce em memória através da interface IMemoryCache():
 builder.Services.AddMemoryCache();

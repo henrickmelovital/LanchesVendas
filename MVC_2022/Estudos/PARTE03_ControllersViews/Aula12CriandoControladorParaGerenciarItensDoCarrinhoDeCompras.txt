@@ -1,0 +1,11 @@
+﻿Controller CarrinhoCompraController
+
+1º Implementar o controlador para o carrinho de compras:
+	
+2º: Criar a classe CarrinhoCompraController.cs na pasta Controllers;
+	2.1º Métodos Action:
+		2.1.1º: Index();
+		2.1.2º: AdicionarItemNoCarrinhoCompra();
+		2.1.3º: RemoverItemDoCarrinhoCompra();
+	2.2º: Views
+		2.2.1º: Index.cshtml na pasta /Views/CarrinhoCompra;

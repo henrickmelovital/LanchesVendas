@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MVC_2022.Context;
-using System.Xml.Serialization;
 
 namespace MVC_2022.Models
 {
