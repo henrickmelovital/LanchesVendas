@@ -9,3 +9,13 @@
 		2.1.3º: RemoverItemDoCarrinhoCompra();
 	2.2º: Views
 		2.2.1º: Index.cshtml na pasta /Views/CarrinhoCompra;
+
+3º: implementar a exibição do carrinho de compras:
+	3.1º: Dentro do controlador 'CarrinhoCompraController';
+	3.2º: Método Action 'AdicionarItemNoCarrinhoCompra';
+		3.2.1º: RedirectToActionResult:
+			3.2.1.1º: 302 Found
+			3.2.1.2º: 302 Moved Permanently;
+			3.2.1.3º: 307 Temporaty Redirect;
+			3.2.1.4º: 308 Permanent Redirect;
+	3.3º: Método Action 'RemoverItemDoCarrinhoCompra';
