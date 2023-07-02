@@ -26,7 +26,7 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Registrando o serviço do carrinho de compra 
 builder.Services.AddScoped(SP => CarrinhoCompra.GetCarrinho(SP));
 
-// Ativar o uso do cahce em memória através da interface IMemoryCache():
+// Ativar o uso do cache em memória através da interface IMemoryCache():
 builder.Services.AddMemoryCache();
 
 // Invocando o método AddSession():
