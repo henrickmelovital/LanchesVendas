@@ -1,0 +1,15 @@
+﻿Criação do projeto ASP .NET Core MVC
+
+1º:  ASP.NET CORE Web App (Model-View-Controller)
+
+2º: Padrões usados no projeto 
+	2.1º: Temos como alternativa usar o código Stratup e Program;
+	2.2º: Temos como alternativa usar apenas a classe Program; 
+
+3º: Limpar o código Privacy:
+	3.1º: Limpar o controller Privacy;
+	3.2º: Deletar a view Privacy;
+	3.3º: Remover o Código da ViewIndex;
+	3.4º: Remover o código que da barra no _Layout.cshtml;
+
+4º: Limpar view Index;
