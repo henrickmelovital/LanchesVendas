@@ -1,4 +1,6 @@
-﻿1º Procurar por bootstrap 5.1 carousel ;
+﻿Carrousel Site de Vendas:
+
+1º Procurar por bootstrap 5.1 carousel ;
 
 2º Colocar o carousel 'With Controls';
 
