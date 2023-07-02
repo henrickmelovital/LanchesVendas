@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\Full-Cart-icon.png",
+      "PackagePath": "staticwebassets\\images\\Full-Cart-icon.png"
+    },
+    {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\carousel11.jpg",
       "PackagePath": "staticwebassets\\images\\carousel11.jpg"
     },
@@ -23,6 +27,10 @@
     {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\carousel13.jpg",
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\delete.png",
+      "PackagePath": "staticwebassets\\images\\delete.png"
     },
     {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheeseburger1 (1).jpg",
@@ -55,6 +63,10 @@
     {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\mistoquente4.jpg",
       "PackagePath": "staticwebassets\\images\\imagensDoInsert\\mistoquente4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\remove.ico",
+      "PackagePath": "staticwebassets\\images\\remove.ico"
     },
     {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\js\\site.js",

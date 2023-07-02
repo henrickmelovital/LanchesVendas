@@ -1,0 +1,32 @@
+﻿Padrão MVC - Padrão de Arquitetura de Software:
+
+1º: Separar os dadsos ou lógica de negócios (Model) da interface do usuário (View) e do fluxo da aplicação (Controller)
+
+2º: Model:
+	2.1º: Representa a parte da aplicação que implementa a lógica do modelo de dados da aplicação e gerencia o comportamento dos dados através das regras de negócio;
+
+3º: View:
+	3.1º: Exibe a interface do usuário e em geral é criada a partir do Model via Controller;
+
+4º: Controller:
+	4.1º: É o componente que recebe solicitação, trabalha com o Model e com base no request seleciona uma View para ser exibida;
+
+5º ASP.NET Core MVC - Implementação do padrão MVC:
+	5.1º: View Engine;
+	5.2º: Model Binding;
+	5.3º: Tag-Hekpers;
+	5.4º: Routing;
+	5.5º: Scaffolfing;
+	5.6º: Configuração sobre convenção;
+
+6º: Conceitos Importantes sobre MVC I:
+	6.1º: No MVC não existe uma correspondência entre uma URL e uma página;
+	6.2º: Uma URL corresponde a uma ação de um controlador;
+	6.3º: As requisições são mapeadas para métodos Action no Controller;
+	6.4º: A definição do mapeamento padrão divide todas as requisições de entrada em três segmentos:
+		6.4.1º: {controller}/{action}/{id};
+
+7º: Conceitos Importantes sobre MVC II:
+	7.1º: O padrão MVC não é a mesma coisa que uma arquitetura em 3 camadas;
+	7.2º: O padrão MVC está relacionado com a arquitetura da aplicação e em como os componentes se comunicam;
+	7.3º: A arquitetura em 3 camdas está relacionada com a arquitetura do Sistema onde você divide as responsabilidade em camada de apresentação, de negócios e de acesso aos dados;

@@ -14,5 +14,6 @@ namespace MVC_2022.Context
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Lanche> Lanches { get; set; }
         public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; }
+        public DbSet<MVC_2022.Models.CarrinhoCompra> CarrinhoCompra { get; set; }
     }
 }
