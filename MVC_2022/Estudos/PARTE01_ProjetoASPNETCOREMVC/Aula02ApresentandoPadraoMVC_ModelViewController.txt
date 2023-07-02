@@ -1,4 +1,0 @@
-﻿1º Criar controlador, dentro da pasta 'Controller';
-
-2º Para criar uma View, clicar com o botão direito em cima do controlador que desejar;;
-

@@ -1,0 +1,6 @@
+﻿1º: Definir <Nullable>disable</Nullable>:
+
+2º Criar controlador, dentro da pasta 'Controller';
+	2.1º: Para criar uma View, clicar com o botão direito em cima do controlador que desejar;
+
+
