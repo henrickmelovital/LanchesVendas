@@ -2,7 +2,7 @@
 
 2º Limpar o código dentro do arquivo HomeController;
 
-3º Deletar a view Privacy
+3º Deletar a view Privacy;
 
 4º Remover o Código da ViewIndex;
 

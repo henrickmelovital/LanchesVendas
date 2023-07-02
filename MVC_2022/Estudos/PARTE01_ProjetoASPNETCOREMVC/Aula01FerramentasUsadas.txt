@@ -1,0 +1,13 @@
+﻿Ferramentas:
+
+1º SQL Server 2019 Express ou Developer:
+	1.1º: É um SGBD usada para armazenamento e administrar informações nas tabelas do banco de dados relacional;
+
+2º SQL Server Management Studio (SSMS):
+	2.1º: Ferramenta visual usada para configurar, gerenciar e adminstrar os banco de dados e tabelas;
+
+3º: Entity Framework Core:
+	3.1º: Ferramenta para realizar o mapeamento objeto relacional entre as entidades e as tabelas do banco de dados;
+
+4º: Bootstrap 5.1.0:
+	4.1º: Biblioteca HTML, CSS e JS usada para simplificar o desenvolvimento de páginas web (Views);
