@@ -19,20 +19,17 @@
 	5.3º: Permite gerenciar o versionamento do banco de dados usando Migrations;
 	5.4º: Auxiliar na produtivodade reduzindo o tempo de desenvolvimento;
 
-Convenções usadas pelo EFCORE
-
-1º: A propriedade Id ou <nome_entidade>Id vai gerar uma chave primária na tabela;
-
-2º: As propriedades definidas na classe irão gerar colunas com o mesmo nome na tabela;
-
-3º: O tipo de dados das colunas geradas a partir dos tipos definidos nas propriedades depende do provedor de banco de dados usados;
-
-C#			SQL Server
-int			int
-string		nvarchar(Max)
-decimal		decimal(18, 2)
-bool		bit 
-datetime	datetime
+6º: Convenções usadas pelo EFCORE
+	6.1º: A propriedade Id ou <nome_entidade>Id vai gerar uma chave primária na tabela;
+	6.2º: As propriedades definidas na classe irão gerar colunas com o mesmo nome na tabela;
+	6.3º: O tipo de dados das colunas geradas a partir dos tipos definidos nas propriedades depende do provedor de banco de dados usados;
+		6.3.1: C#			SQL Server
+			 int			int
+			 string		nvarchar(Max)
+			 decimal		decimal(18, 2)
+			 bool		bit 
+			 datetime	datetime
+	6.4º: A definição do relacionamento entre as entidades é definido em uma propriedade de navegação;
 
 4º Criar os atributos dentro da classe 'Models':
 	4.1º: Relacionamento Um-para-muitos:
