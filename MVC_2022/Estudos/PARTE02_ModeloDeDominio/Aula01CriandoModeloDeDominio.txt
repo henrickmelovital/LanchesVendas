@@ -1,4 +1,25 @@
-﻿Convenções usadas pelo EFCORE
+﻿Modelo de Domínio:
+
+1º: Classes que representam a sua lógica de negócio;
+
+2º:Vender Lanches:
+	2.1º: Lanche: Nome, Preco, Descricao curta, Descricao longa, Imagem, Imagem miniatura, Categoria, se é um lanche preferido, se o lanhce está disponível
+	2.2º: Categoria: Nome e Descricao;
+
+3º: Modelo de Domínio - Usar uma Ferramenta ORM:
+	3.1º: Ferramenta ORM - Mapeia as classes para as tabelas do banco de dados;
+
+4º: Entity Framework Core Abordagem Code-First:
+	4.1º: Gerar o banco de dados e as tabelas a partir das classes;
+	4.2º: Primeiro eu crio as classes do modelo de dompinio, e depois, usando o EF Core eu crio o banco de dados e as tabelas com base nas classes;
+
+5º: Entity Framework Core - Code-First (Vantagens):
+	5.1º: Permite definir as propriedades e relacionadas usando códig C#;
+	5.2º: Permite abstrair comandos SQL e objetos ADO.NET;
+	5.3º: Permite gerenciar o versionamento do banco de dados usando Migrations;
+	5.4º: Auxiliar na produtivodade reduzindo o tempo de desenvolvimento;
+
+Convenções usadas pelo EFCORE
 
 1º: A propriedade Id ou <nome_entidade>Id vai gerar uma chave primária na tabela;
 

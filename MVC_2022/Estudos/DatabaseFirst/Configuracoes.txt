@@ -1,0 +1,28 @@
+﻿DataBase First:
+
+1º: Passar a string de conexão com o o banco de dados, dentro de 'appsettings.json'
+
+2º: Baixar os seguintes pacores nuget:
+	2.1º: Microsoft.EntityFrameworkCore.SqlServer
+	2.2º: Microsoft.EntityFrameworkCore.Design;
+	2.3º: Microsoft.EntityFrameworkCore.Tools;
+
+3º: Comandos para fazer a Engenharia Reversa:
+	3.1º: 'dotnet ef dbcontext' - comando;
+	3.2º: 'Name=ConnectionStrings:<NomeDaConexao>' - a string de conexao do banco de dados usado;
+	3.3º: 'Provider' - O Provedor do banco de dados - Microsoft.EntityFrameworkCore.SqlServer
+	3.4º: '-o Models' - a pasta de saída das classes geradas;
+	3.5º: '-c AppDbContext' - O nome do DbContext usado na aplicação; 
+
+4º: Exemplo de comando de Engenharia Reversa:
+	4.1º: 'dotnet ef dbcontext scaffold "Name=ConnectionStrings:AuditTeste" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext';
+
+5º: Ficar dentro do projeto principal:
+	5.1º: cd .\<NomeDoProjeto>;
+
+6º: Registrar o serviço do DbContext, dentro da classe Progrma.cs
+
+7º: Criar o controller para fazer o CRUD:
+	7.1º: Criar o Controller 'Controlador MVC com exibições, usando o Entity Framework 
+	7.2º: Escolher o Model que vai usar e o AppDbContext;
+	7.3º: 
