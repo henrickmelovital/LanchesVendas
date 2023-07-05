@@ -1,4 +1,16 @@
-﻿EF CORE - Funcionamento
+﻿1º: Entity Framework Core:
+	1.1º: Ferramenta ORM (Object Relacional Mapping) que permite trabalhar com dados na forma de objetos do domínio;
+	1.2º: Elimina a necessidade da maior parte do código de acesso que precisamos escrever manualmente;
+
+2º: É a nova versão do Entity Framework (EF6) escrito do zero;
+	2.1º: Multiplataforma (Windows, Linux e Mac) e open source (github);
+	2.2º: Suporta diversos provedores: SQLServer, MySql, PostGreSql, SQLite;
+	2.3º: Pode ser usado para criar aplicações para web, mobile, desktop, cloud;
+	2.4º: Suporta abordagens: Code-First e Database-First;
+	2.5º: Instalado via pacote Nugets;
+	2.6º: Suporta a ferramenta de linha de comando (NET CLI e VS Code);
+
+Entity Framework CORE - Funcionamento
 
 1º DbContext(Database):
 	1.1º: Conexão com o Database
@@ -11,3 +23,11 @@
 	2.1º: Coleção para entidade do modelo
 	2.2º: Coleção na memória
 	2.3º: Para persistir usar SaveChanges()
+
+Entity Framework Core - Code-First:
+
+1º: Vantagens:
+	1.1º: Aumento produtividade - Criar as classes é mais fácil que criar tabelas;
+	1.2º: Permite o controle sobre o versionamento do banco de dados - Migrations 
+	1.3º: A quantiade de código necessário é bem menor;
+	1.4º: Fácil de testar a integrar 
