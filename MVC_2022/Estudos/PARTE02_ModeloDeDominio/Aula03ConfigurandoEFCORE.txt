@@ -1,13 +1,19 @@
-﻿1º Instalação dos Três Pacotes:
+﻿1º Instalação dos Três Pacotes nuget :
 	1.1º: Microsoft.EntityFrameworkCore.SqlServer;
 	1.2º: Microsoft.EntityFrameworkCore.Tools;
 	1.3º: Microsoft.EntityFrameworkCore.Design;
 
-2º Criar a classe 'Context':
+2º Criar uma pasta 'Context':
 	2.1º: Dentro da pasta 'Context' uma classe AppDbContext.cs
 	2.2º: Criar um construtor para classe;
 	2.3º: Para cada Model, Criar um DbSet<>;
 
-3º: Criar a ConnectionString dentro do arquivo appsetting.json;
+3º: Criar a string de conexão dentro do arquivo appsetting.json;
 
-4º: Criar o servico de configuração dentro da classe program ou stratup;
+4º: Registrar o serviço de conexão dentro da classe Program.cs;
+	4.1º: Exemplo de registro de serviço:
+		  var connectionString = builder.Configuration.GetConnectionString("<NomeDaConexao>") ??
+		  throw new InvalidOperationException("Connection string '<NomeDoBanco>' not found.");
+		  
+		  builder.Services.AddDbContext<AppDbContext>(options =>
+				options.UseSqlServer(connectionString));

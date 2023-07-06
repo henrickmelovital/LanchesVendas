@@ -3,7 +3,7 @@
 1º: Passar a string de conexão com o o banco de dados, dentro de 'appsettings.json'
 
 2º: Baixar os seguintes pacores nuget:
-	2.1º: Microsoft.EntityFrameworkCore.SqlServer
+	2.1º: Microsoft.EntityFrameworkCore.SqlServer;
 	2.2º: Microsoft.EntityFrameworkCore.Design;
 	2.3º: Microsoft.EntityFrameworkCore.Tools;
 
