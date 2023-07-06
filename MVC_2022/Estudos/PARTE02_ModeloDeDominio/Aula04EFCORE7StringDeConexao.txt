@@ -1,13 +1,40 @@
-﻿1º: Primcipal mudança ao usar EF Core 7.0
-	1.1º: Alteração da classe 'System.Data.SqlClient'
+﻿SQL Server - Connection String:
 
-2º: Nas versões anteriores do EF Core as string de conexão 'SqlClient' 
-usavam a propriedade 'Encrypt=False' por padrão, e, isso permitia conexões com máquinas de desenvolvimento onde o servidor local não possuia um certificado válido.
+1º: A string de conexão é uma expressão que contém os parâmetros necessários para que os aplicativos se conectem a um servidor de banco de dados;
 
-3º A partir do EF Core 7 as string de conexões SqlClient utilizam por padrão Encrypt=True e isso significa que:
-	3.1º: o Servidor deve ser configurado com um certificado válido;
-	3.2º: O cliente deve confiar neste certificado;
-Se essas condições não forem atendidas, será lançada um SqlException;
+2º: No SQL Server as strings de conexão incluem:
+	2.1º: A instância do servidor;
+	2.2º: O nome do banco de dados;
+	2.3º: Os detalhes de autenticação;
+	2.4º: Outras configurações para comunicar com o servidor do banco de dados;
+
+3º: SQL Server Authentication:
+	3.1º: 'Server=ServerName; Database=DatabaseName; User Id=UserName; Password=UserPassword;'
+
+4º: Windows Authentication:
+	4.1º: 'Server=ServerName; Database=DatabaseName; Trusted_Connection=True;'
+
+5º: LocalDB:
+	5.1º: 'Server=(localdb)\MinhaInstancia; Integrated Security=True;'
+
+6º: SQL Express:
+	6.1º: 'Data Source=nome_server\\sqlexpress; Initial Catalog=Database1; Integrated Security=True;'
+
+Entity Framework Core 7 e a String de conexão:
+
+1º: Entity Framework Core 7:
+	1.1º: Você pode usar o EF Core 7.0 em projetos criados no .NET;
+
+2º: Qual a principal mudança ao usar o EF Core 7.0:
+	2.1º: Para SQL Server;
+	2.2º: Nas versões anteriores do EF Core as strings de conexão SqlClient usavam a propriedade Encrypt=False por padrão, e isso permitia conexões em máquinas de desenvolvimento onde o servidor loca não possuia um certificado válido;
+	2.3º: A partir do EF Core 7 as strings de conexão SqlClient utilizam por padrão Encrypt=True e isso signifca que:
+		2.3.1º: O servidor deve ser configurado com um certificado válido;
+		2.3.2º: o cliente deve confiar neste certificado;
+	2.4º: Se essas condições não forem atendidas, será lançada um SqlException;
+
+3º: Principal mudança ao usar EF Core 7.0;
+	3.1º: Alteração da classe 'System.Data.SqlClient'
 
 4º: Existem três maneiras de resolver ou contornar o problema se ele surgir:
 	4.1º: Instalar um certificado válido no servidor;
