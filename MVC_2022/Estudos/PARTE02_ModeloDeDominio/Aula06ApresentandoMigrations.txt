@@ -1,0 +1,50 @@
+﻿1º: Migrations:
+	1.1º: Permite atualizar de forma incremental o esquema do banco de dados e assim mantê-lo sincronizado com o modelo de dados do seu projeto preservando os dados existentes.
+
+2º: Principais tarefas do Migrations:
+	2.1º: Atualizar o banco de dados: Aplicar migrações pendentes para atualizar o esquema do banco de dados;
+	2.2º: Personalizar o código de migração: Modificar e suplementar o código gerado;
+	2.3º: Remover uma migração: Excluir um código gerado;
+	2.4º: Reverter uma migração: Desfazer as alterações no banco de dados;
+	2.5º: Gerar scripts SQL: Gerar scripts para atualizar ou solucionar problemas;
+	2.6º: Aplicar migrações em tempo de execução: Usar o método MIgrate() para migrações em runtime;
+
+3º: Migrations - Requisitos para uso:
+	3.1º: Instalar as ferramentas do Entity Framework Core qua ajudam nas tarefas de desenvolvimento em tempo de projeto e são usadas para gerar migrações e fazer a engenharia reversa do esquema do banco de dados;
+	3.2º: Para aplicar o Migrations no projeto temos que definir;
+		3.2.1º: Um modelo de entidade que são as classes de propriedades;
+		3.2.2º: Uma classe de contexto que herda de DbContext e os DbSets<> para as entidades a mapear;
+		3.2.3º: Definir a string de conexão como um serviço usando AddDbContext;
+		3.2.4º: Definir o provedor do banco de dados e a string de conexão usada;
+
+4º: Migrations - Como usar:
+	4.1º: Usar as ferramentar no Visual Studio na janela do Packege Manager Console;
+	4.2º: Usar as ferramentas de linha de comando (NET CLI) com o vs Code;
+	4.3º: O Processo de criar e aplicar o Migration envolver duas etapas:
+		4.3.1º: Criar a migração: Cria o arquivo de script SQL contendo os comandos da migração;
+		4.3.2º: Aplicar a migração: Execute o arquivo de script gerado e aplica os comandos ao banco de dados;
+
+Migrations - Package Manager Console
+
+1º: Criar Migração
+	1.1º: add-migration 'NomeDaMigração' [options]
+
+2º: Aplicar Migração
+	2.1º: update-database
+
+3º: Remover Migração
+	3.1º: remove-migration
+
+Migration - Ferramenta NET CLI:
+
+1º: Instalar a ferramenta de linha de comando do EF Core:
+	1.1º: dotnet tool install --global dotnet-ef
+
+2º: Criar Migração:
+	2.1: dotnet ef migrations add 'NomeDaMigração' [options]
+
+3º: Aplicar Migração:
+	3.1º: dotnet ef database update [options]
+
+4º: Remover Migração:
+	4.1º: dotnet ef migrations remove;
