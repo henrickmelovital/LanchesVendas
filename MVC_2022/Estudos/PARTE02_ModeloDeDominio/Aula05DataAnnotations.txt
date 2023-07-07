@@ -6,31 +6,36 @@
 	1.3º: Especificar o relacionamento entre as entidades do modelo;
 	1.4º: Sobrescrever as convenções padrão do Entity Framework Core;
 
-2º: Namespace
-	2.1º: System.ComponentModel.DataAnnotations;
-	2.2º: System.ComponentModel.DataAnnotations.Schema;
+2º DataAnnotations - Utilização:
+	2.1º: Front-End - Atributos de validação: Usados para impor regras de validação nas views. Podem ser usadas para validar e-mail, dados, campos com máscaras, etc.
+	2.2º: Front-End - Atributos de exibição: Usados para especificar como as propriedaes do modelo serão exibidas. (Podem ser usadas em Resources para exibir um valor diferente dependendo do idioma do usuário.);
+	2.3º: Back-End - Atributos de modelagem de dados: Usados para especificar as limitações da tabela e o relacionamento entre as classes. POdem ser usador para definir o tipo de campo, tamanho, formatação, etc.
 
-3º: Impor regras de validação na View
-	3.1º: Definir os ãtributos nas propriedade das classes do modelo de domínio;
-	3.2º: Definir os critérios de validação em um local (Model) e isso produz os efeitos em qualquer lugar que o Model for usado;
-	3.3º: A validação é aplicada no modelo de domínio através de definição de atribtuos e não na interface do usuário;
+3º: Namespace
+	3.1º: System.ComponentModel.DataAnnotations;
+	3.2º: System.ComponentModel.DataAnnotations.Schema;
 
-4º Atributos de validação do modelo:
-	4.1º: 'Required' Especifica uma propriedade como obrigatória e não aceita null no banco de dados;
-	4.2º: 'Range' Especifica as restrições de intervalo numérico para o valor de um campo de dados;
-	4.3º: 'EmailAddress' Valida o formato de um endereço de e-mail;
-	4.4º: 'Phone' Valida formato de telefone;
-	4.5º: 'MinLenght' Especifica o comprimento mínimo dos dados de cadeia de caracteres da propriedade;
-	4.6º: 'MaxLenght' Especifica o comprimento máximo dos dados de cadeia de caracteres da propriedade;
-	4.7º: 'StringLenght' Especifica o comprimento mínimo e máximo de caracteres permitidos na propriedade;
-	4.8º: 'RegularExpression' Permitir definir expressões regulares para validações especificas;
-	4.9º: 'Display' Especifica como os campos de dados são exibidos e formatados na View;
-	4.10º: 'DisplayFormat' Aplica um formato definido a uma propriedade que será exibido na View;
+4º: Impor regras de validação na View
+	4.1º: Definir os atributos nas propriedade das classes do modelo de domínio;
+	4.2º: Definir os critérios de validação em um local (Model) e isso produz os efeitos em qualquer lugar que o Model for usado;
+	4.3º: A validação é aplicada no modelo de domínio através de definição de atribtuos e não na interface do usuário;
 
-5º Atributos de modelagem de dados:
-	5.1º: 'Key(*)' Identifica a propriedae como uma chave primária na tabela
-	5.2º: 'Table' Define o nome da tabela para a qual a classe será mapeada
-	5.3º: 'Column' Define a coluna na tabela para a qual a propriedade será mapeada
-	5.4º: 'DataType(*)' Associa um tipo de dados adicional a uma propriedade
-	5.5º: 'ForeignKey' Especifica que a propriedade é usada como uma chave estrangeira
-	5.6º: 'NotMapped'  Exclui a propriedade do mapeamento
+5º Atributos de validação do modelo:
+	5.1º: 'Required' Especifica uma propriedade como obrigatória e não aceita null no banco de dados;
+	5.2º: 'Range' Especifica as restrições de intervalo numérico para o valor de um campo de dados;
+	5.3º: 'EmailAddress' Valida o formato de um endereço de e-mail;
+	5.4º: 'Phone' Valida formato de telefone;
+	5.5º: 'MinLenght' Especifica o comprimento mínimo dos dados de cadeia de caracteres da propriedade;
+	5.6º: 'MaxLenght' Especifica o comprimento máximo dos dados de cadeia de caracteres da propriedade;
+	5.7º: 'StringLenght' Especifica o comprimento mínimo e máximo de caracteres permitidos na propriedade;
+	5.8º: 'RegularExpression' Permitir definir expressões regulares para validações especificas;
+	5.9º: 'Display' Especifica como os campos de dados são exibidos e formatados na View;
+	5.10º: 'DisplayFormat' Aplica um formato definido a uma propriedade que será exibido na View;
+
+6º Atributos de modelagem de dados:
+	6.1º: 'Key(*)' Identifica a propriedae como uma chave primária na tabela
+	6.2º: 'Table' Define o nome da tabela para a qual a classe será mapeada
+	6.3º: 'Column' Define a coluna na tabela para a qual a propriedade será mapeada
+	6.4º: 'DataType(*)' Associa um tipo de dados adicional a uma propriedade
+	6.5º: 'ForeignKey' Especifica que a propriedade é usada como uma chave estrangeira
+	6.6º: 'NotMapped'  Exclui a propriedade do mapeamento
