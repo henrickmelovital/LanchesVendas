@@ -23,3 +23,7 @@ Populando as tabelas com dados iniciais: Migrations
 	4.3º: Uma migração para incluir dados na tabela Categorias;
 	4.4º: Uma migração para incluir dados na tabela Lanches;
 
+5º: Populando as tabelas com dados iniciais: Migrations:
+	5.1º: Criar duas Migrações;
+	5.2º: Uma migração para incluir dados na tabela Categorias;
+	5.3º: Uma migração para incluir dados na tabela Lanches;
