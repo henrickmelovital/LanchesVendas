@@ -11,4 +11,4 @@ Populando
 
 2º: Depois de fazer a migration, escrever o script de envio de dados no arquivo gerado com o nome da migration
 
-3º: fazer um update na base de dados com 'update-database'
+3º: fazer um update na base de dados com 'update-database' 

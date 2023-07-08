@@ -1,0 +1,5 @@
+﻿1º: Populando as tabelas com dados iniciais: MIgrations 
+	1.1º: Criar uma nova migração para popular a tabela Lanches;
+		1.1.1º: add-migration PopularLanches;
+	1.2º: Incluir no método Up() as instruções INSERT INTO para popular as tabelas;
+	1.3º: Inlcuir no método Down() as instruções DELETE FROM para desfazer a migraçõa;
