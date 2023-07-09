@@ -8,6 +8,8 @@
 
 4º: A plataforma .NET implementa o padrão da injeção de dependência através de um contêiner nativo chamado Contêiner DI que realiza e aplica a injeção de dependência após ser feita a configuração;
 
+5º: Tranferir a tarefa de criar o objeto para outro objeto ou framework e usar diretamente a depência é chamado de injeção de dependência;
+
 Injeção de Depedência: Escopo (vida útil) dos serviços
 
 Podemos usar três escopos com o contêiner DI padrão. Esses escopos afetam como o serviço é resolvido e descartado pelo provedor de serviços.
@@ -24,7 +26,3 @@ Podemos usar três escopos com o contêiner DI padrão. Esses escopos afetam com
 ========================================================================================================================================================================================================================================================================================================================================
 
 1º Registrar o serviço das classes e interfaces dentro da classe Program.cs	
-
-
-
-
