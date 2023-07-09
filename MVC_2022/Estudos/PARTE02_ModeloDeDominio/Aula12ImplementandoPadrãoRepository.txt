@@ -17,9 +17,9 @@
 
 4º: Padrão Repository - Implantação:
 	4.1º: Criar uma interface com o contrato da lógica de acesso aos dados; 
-	4.2º: Criar uma classe concreta que implementa o contrat da interface;
+	4.2º: Criar uma classe concreta que implementa o contrato da interface;
 
-=================================================================
+================================================================================================================================
 
 1º: Padrão Repository - Categorias:
 	1.1º: Propriedades categorias somente leitura que retorna uma lista de objetos Categoria
@@ -34,10 +34,10 @@
 	2.3º: A assinatura do método GetLancheById (int lancheId) que retornam um objeto Lache pelo seu identificador LancheId;
 
 
-====================================================================
+===================================================================================================================================
 
 1º: Criar uma interface:
-	1.1º: ICategoriaRepository (somente para leitura)
+	1.1º: ICategoriaRepository (somente para leitura);
 
 2º: Criar uma classe concentra:
 	2.1º: CategoriaRepository
@@ -45,7 +45,16 @@
 	2.3º: Fazer a instância do AppDbContext;
 	2.4º: Criar o construtor de AppDbContext;
 
-===============================================================
+3º: Criar uma interface:
+	3.1º: ILancheRepository (somente para leitura);
+
+4º: Criar uma classe concentra:
+	4.1º: LancheRepository
+	4.2º: Fazer a instância do ILancheRepository;
+	4.3º: Fazer a instância do AppDbContext;
+	4.4º: Criar o construtor de AppDbContext;
+
+==============================================================================================================================
 
 Padrão Rository - Lanches
 
@@ -54,5 +63,19 @@ Padrão Rository - Lanches
 2º: A assinatura da propriedade somente leitura LanchesPreferidos que retorna uma lista de objetos Lanche onde iremos filtrar apenas os lanches preferidos;
 
 3º: A assinatura do método GetLancheById(int lancheId) que retorna um objeto Lanche pelo seu Identidicador LancheId
+
+==============================================================================================================================
+
+Padrão Repository - Lanches : Consultas LINQ-to-Entites:
+
+1º: 'public IEnumerable<Lanche> Lanches => _context.Lanches.Include(c => c.Categoria)'
+	1.1º: 'Include' - Método que permite obter os dados relacionados incluindo-os no resultado da consulta;
+
+2º: 'public IEnumerable<Lanche> LanchesPreferidos => _context.Lanches.Where(l => l.IsLanchePreferido).Include(c => c.Categoria)'
+	2.1º: 'Where' - Clásula Where permite realizar um filtro usando uma condição em uma expressão lambda;
+
+3º: 'public Lanche GetLancheById(int lancheid) { return _context.Lanches.FirstOrDefault(l => l.LancheId == lancheid);}'
+	3.1º: 'FirstOrDefualt' - Retorna o primeiro elemento de uma sequência ou um valor padrão caso não seja encontrado nenhum elemento;
+
 
 	

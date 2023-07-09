@@ -13,6 +13,7 @@ namespace MVC_2022.Repositories
             _context = context;
         }
 
+        // Expressions Bodied Member
         public IEnumerable<Categoria> Categorias => _context.Categorias;
     }
 }

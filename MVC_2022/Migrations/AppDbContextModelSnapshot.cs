@@ -44,7 +44,7 @@ namespace MVC_2022.Migrations
 
                     b.HasIndex("LancheId");
 
-                    b.ToTable("CarrinhoCompraItens");
+                    b.ToTable("CarrinhoCompraItens", (string)null);
                 });
 
             modelBuilder.Entity("MVC_2022.Models.Categoria", b =>
@@ -67,7 +67,7 @@ namespace MVC_2022.Migrations
 
                     b.HasKey("CategoriaId");
 
-                    b.ToTable("Categorias");
+                    b.ToTable("Categorias", (string)null);
                 });
 
             modelBuilder.Entity("MVC_2022.Models.Lanche", b =>
@@ -115,7 +115,7 @@ namespace MVC_2022.Migrations
 
                     b.HasIndex("CategoriaId");
 
-                    b.ToTable("Lanches");
+                    b.ToTable("Lanches", (string)null);
                 });
 
             modelBuilder.Entity("MVC_2022.Models.CarrinhoCompraItem", b =>
