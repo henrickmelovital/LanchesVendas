@@ -1,18 +1,39 @@
 ﻿1º ViewData: 
 	1.1º: Transfere dados do Controller para a View;
-	1.2º: É o tipo ViewDataDictionary
+	1.2º: É do tipo ViewDataDictionary
 	1.3º: É um dicionário que armazena dados no formato chave/valor;
 	1.4º: Exige a conversão de tipos para: verificar valores nulos, objter dados, evitar erros.
+	1.5º: Controller:
+		1.5.1º: 'ViewData["Titulo"] = "Todos os lanches";'
+		1.5.2º: 'ViewData["Data"] = DateTime.Now;
+	1.6º: View:
+		1.6.1º: '@ViewData["Titulo"]'
+		1.6.2º: '@ViewData["Data"]'
+	1.7: Tempo de Vida - Request;
 
 2º ViewBag:
 	2.1º: Transfere dados do Controller para a View; 
 	2.2º: É uma propriedade dinâmica (dynamic);
 	2.3º: É um tipo object que armazena dados no formato chave/valor;
 	2.4º: Não requer a conversão de tipos;
+	2.5º: Controller:
+		2.5.1º: 'ViewBag.Total = "Total de lanches:";'
+		2.5.2º: 'ViewBag.TotalLanches = lanches.Count();'
+	2.6º: View:
+		2.6.1º: '@ViewBag.Total';
+		2.6.2º: '@ViewBag.TotalLanches';
+	2.7: Tempo de Vida - Request;
 
 3º TempData:
 	3.1º: Transfere dados do :Controller para a View, da View para o controller ou de um método Action para outro método Action no mesmo Controlador ou para um Controlador diferente
 	3.2º: É um objeto dicionário do tipo TempDataDictionary que armazena dados no formato chave/valor;
 	3.3º: Armazena os dados temporariamente e os remove automaticamente após recuperar um valor;
 	3.4º: Exige a conversão de tipos;
+	3.5º: Controller1:
+		3.5.1º: 'TempData["Nome"] = "Henrick"';
+	3.6º: Controller2:
+		3.6.1º: '@TempData["Nome"]';
+	3.7º: Conferir se o TempData possui valor:
+		3.7.1º: '@if(TempData.ContainsKey("Nome"))';
+	3.8º: Tempo de vida - Apenas um request;
 
