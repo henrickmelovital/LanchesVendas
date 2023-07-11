@@ -9,4 +9,4 @@
 3º: View - List.cshtml;
 	3.1º: '@Html.DisplayNameFor' - Mostra o nome da propriedade;
 	3.2º: '@Html.DisplayFor' - Mostra os dados;
-	3.3º: Para percorrer a informação deve se ficar dentro de um for each;
+	3.3º: Para percorrer a informação deve se ficar dentro de um 'foreach';

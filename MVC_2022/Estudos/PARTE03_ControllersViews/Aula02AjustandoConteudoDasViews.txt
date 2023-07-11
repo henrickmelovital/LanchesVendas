@@ -1,5 +1,13 @@
 ﻿Views Fortemente tipada
 
-1º Alterar o código das Views:
-	1.1º: diretiva @model define o modelo usando na view
-	1.2º: variável Modelo representa o tipo definido na view
+1º:View List.cshtml - Ajuste:
+	1.1º: View vai exibir 'nome do lanche', 'imagem do lanche' e 'preço do lanche';
+
+2º Alterar o código das Views:
+	2.1º: diretiva @model define o modelo usando na view
+	2.2º: variável Modelo representa o tipo definido na view
+
+3º Detalhes de apresentação?
+	3.1º: '@lanche.Nome' - trás o nome do lanche;
+	3.2º: '@lanche.ImagemUrl' - trás a imagem do repositório.
+	3.3º: '@lanche.Preco.ToString("c")' - trás a valor do lanche, formato para moeda local.
