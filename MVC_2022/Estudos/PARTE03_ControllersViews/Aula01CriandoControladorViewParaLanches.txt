@@ -2,8 +2,11 @@
 
 2º: Método Action - List();
 	2.1º: Fazer a injeção de dependência dentro da classe LancheController;
+	2.1º: A injeção de dependência é da interface 'ILancheRepository';
 	2.2º: Criar o construtor da injeção para poder usar a instância da interface;
 	2.3º: Dentro da view instânciar quais serão os dados apresentados;
 
 3º: View - List.cshtml;
-
+	3.1º: '@Html.DisplayNameFor' - Mostra o nome da propriedade;
+	3.2º: '@Html.DisplayFor' - Mostra os dados;
+	3.3º: Para percorrer a informação deve se ficar dentro de um for each;
