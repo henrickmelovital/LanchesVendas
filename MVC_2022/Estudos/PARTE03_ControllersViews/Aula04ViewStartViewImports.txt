@@ -1,3 +1,6 @@
-﻿1º: _ViewStart: Responsável pelo Layout principal da página;
+﻿1º: _ViewStart: Responsável pelo Layout principal da página:
+	1.1º: O arquivo '_Layout.cshtml', é a primeira tela a ser iniciada;
+	1.2º: Para o arquio não conter a tela principal:
+		1.2.1º: @ { Layout = null; }
 
-2º: _ViewImport: Responsável pelo imports das telas, comunicação com 
+2º: _ViewImport: Usado para incluir os namespace de referencia com comum a todas as views

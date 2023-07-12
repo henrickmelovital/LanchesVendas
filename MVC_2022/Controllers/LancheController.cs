@@ -16,15 +16,8 @@ namespace MVC_2022.Controllers
 
         public IActionResult List()
         {
-            //ViewData["Titulo"] = "Todo os Lanches";
-            //ViewData["Data"] = DateTime.Now;
-
             //var lanches = _lancheRepository.Lanches;
             //var totalLanches = lanches.Count();
-
-            //ViewBag.Total = "Total de Lanches: ";
-            //ViewBag.TotalLanches = totalLanches;
-
 
             //return View(lanches);
             var lancheListViewModel = new LancheListViewModel();
