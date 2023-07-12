@@ -9,3 +9,5 @@
 4º: 'col-lg' dispositivos grandes - largura da tela igual ou superior a 992px;
 
 5º: 'col-xl' xlarge devices - largura da tela igual ou superior a 1200px;
+
+6º: Ajustando o visual ViewList.cshtml;
