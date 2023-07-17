@@ -36,7 +36,7 @@
 	7.3º: Quando a extensão do arquivo está presente, o HTML Helper faz referência a uma partial view que deve estar na mesmo pasta que o arquivo de marcação que chama a partial view;
 
 8º: Partial View - Utilização : Acessando dados:
-	8.1º: '<partial name="_PartialName" for="Model"/>
+	8.1º: '<partial name="_PartialName" for="Model"/>;
 	8.2º: '@await Html.PartialAsync("_PartialName", model);
 	8.3º: '@await html.RenderPartialAsync("_PartialName", model);
 	8.4º: Quando uma partial view é instanciada, ela recebe uma cópia do dicionário ViewData do pai;
