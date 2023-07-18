@@ -1,4 +1,17 @@
-﻿Carrinho de Compras:
+﻿1º: Classe CarrinhoCompraItem -> Representa um item ou lanche selecionado;
 
-1º: Classe CarrinhoCompraItem -> Representa um item ou lanche selecionado;
 2º: Classe CarrinhoCompra -> Representa uma coleção de itens selecionados;
+
+3º: CarrinhoCompra (Propriedades):
+	3.1º: CarrinhoCompraId: Identifica o carrinho de compras de forma única;
+	3.1º: CarrinhoCompraItens: Representa uma lista de itens no carrinho de compras;
+
+4º: CarrinhoCompra (Métodos):
+	4.1º: GetCarrinho: Obtém ou criar um carrinho de compras na Session;
+	4.2º: AdicionarAoCarrinho: Adicionar um item ao carrinho;
+	4.3º: RemoverDoCarrinho: Remove um item do carrinho;
+	4.4º: GetCarrinhoCompraItens: Retorna os itens do carrinho de compra;
+	4.5º: LimparCarrinho: Remove todos os itens do carrinho;
+	4.6º: GetCarrinhoCompraTotal: Calcula o total do carrinho;
+ 
+5º Código deve ser feito dentro da classe 'CarrinhoCompra.cs'

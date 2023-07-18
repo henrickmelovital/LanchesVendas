@@ -26,7 +26,7 @@ namespace MVC_2022.Models
             // Obtem ou gera o Id do carrinho
             string carrinhoId = session.GetString("CarrinhoId") ?? Guid.NewGuid().ToString();
 
-            //Atribui o di do carrinho na sessão
+            //Atribui o ID do carrinho na sessão
             session.SetString("CarrinhoId", carrinhoId);
 
             // Retorna o carrinho com o contexto e o Id atributo ou obtido
@@ -92,7 +92,7 @@ namespace MVC_2022.Models
                     .Include(S => S.Lanche)
                     .ToList());
         }
-
+            
         public void LimparCarrinho()
         {
             var carrinhoItens = _context.CarrinhoCompraItens
@@ -104,9 +104,9 @@ namespace MVC_2022.Models
 
         public decimal GetCarrinhoCompraTotal()
         {
-            var total = _context.CarrinhoCompraItens
-                .Where(C => C.CarrinhoCompraId == CarrinhoCompraId)
-                .Select(C => C.Lanche.Preco * C.Quantidade).Sum();
+                var total = _context.CarrinhoCompraItens
+                    .Where(C => C.CarrinhoCompraId == CarrinhoCompraId)
+                    .Select(C => C.Lanche.Preco * C.Quantidade).Sum();
 
             return total;
         }
