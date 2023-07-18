@@ -19,7 +19,7 @@
 		2.2.2º: e916ebf6-1e68-4394-be9d-ab1758ocd4o1
 
 3º: Implementando carrinho:
-	3.1º: Adicionar o uma classe de atributos dentro de Model;
+	3.1º: Adicionar dentro de 'Models', a classe 'CarrinhoCompraItem';
 	3.2º: Ajustar o AppDbContext, criando DbSet<> Para a nova classe;
 	3.3º: add-migration CarrinhoCompraItem;
 	3.4º: update-database;

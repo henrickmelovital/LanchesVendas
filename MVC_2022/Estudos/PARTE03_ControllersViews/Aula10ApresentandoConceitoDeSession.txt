@@ -11,12 +11,20 @@
 2º Configurando Sessão (Classe Stratup deve contar):
 	2.1º: Qualquer um dos caches de memória IDistributedCache;
 	2.2º: Uma chamada a AddSession em ConfigureServices();
-	2.3º: A chamada UseSession em COnfigure();
+	2.3º: A chamada UseSession em Configure();
+
+3º: Inserindo dados dentro da Session:
+	3.1º: const string SessionKeyNome = "_Nome";
+	3.2º: const string SessionKeyIdade = "_Idade";
+	3.3º: HttpContext.Session.SetString(SessionKeyNome, "Henrick");
+	3.4º: HttpContext.Session.SetInt32(SessionKeyIdade, 21);
+	3.5º: var nome = context.Session.GetString(SessionKeyNome);
+	3.6º: var nome = context.Session.GetString(SessionKeyIdade);
 
 Configurando a Session e o uso de HttpContext:
 
 3º: Para habilitar a middleware da Sessão temos que definir na classe Startup:
-	3.1º: Ativar o uso do cahce em memória através da interface IMemoryCache() usando o método AddMemoryCache(), no método AddMemoryCache(); no método ConfigureServices;
+	3.1º: Ativar o uso do cache em memória através da interface IMemoryCache() usando o método AddMemoryCache(), no método AddMemoryCache(); no método ConfigureServices;
 	3.2º: Invocar o método AddSession() no método ConfigureServices;
 	3.3º: Invocar o UserSession() no método Configure;
 

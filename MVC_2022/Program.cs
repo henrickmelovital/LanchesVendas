@@ -26,9 +26,9 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Registrando o serviço do carrinho de compra 
 builder.Services.AddScoped(SP => CarrinhoCompra.GetCarrinho(SP));
 
+// Habilitando os MiddleWares:
 // Ativar o uso do cache em memória através da interface IMemoryCache():
 builder.Services.AddMemoryCache();
-
 // Invocando o método AddSession():
 builder.Services.AddSession();
 
@@ -49,7 +49,7 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-// Invocar o UserSession():
+// Ativando os Middleswares 'builder.Services.AddMemoryCache();' e 'builder.Services.AddSession();':
 app.UseSession();
 
 app.MapControllerRoute(
