@@ -49,3 +49,9 @@
 	9.3º: Definir o Model para ser usado na partial view(Model);
 	9.4º: Instanciar a partial view dentro da view desejada;
 		9.4.1º: <partial name="_LanchesResumo" for="lanche"/>
+
+10º: Criando uma 'PartialView' para lanches:
+	10.1º: Dentro da pasta Shared criar uma PartialView chamada '_LanchesResumo';
+	10.2º: Usar o '@model Lanche';
+	10.3º: Dentro do arquivo List.cshtml, dentro do laço '@foreach' colocar a instância da PartialView:
+		10.3.1º: <partial name="_LancheResumo" for="@lanche"></partial>;

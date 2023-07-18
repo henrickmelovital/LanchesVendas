@@ -8,4 +8,4 @@
 
 5º: Ajustar a View List;
 
-6º: A ideia da ViewModel, nesse projeto é basicamente unir informações de duas tabelas em um unica View
+6º: A ideia da ViewModel, nesse projeto é basicamente unir informações de duas tabelas em um unica View;
