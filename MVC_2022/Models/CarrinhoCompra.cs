@@ -83,6 +83,7 @@ namespace MVC_2022.Models
             return quantidadeLocal;
         }
 
+        // Retorna uma lista dos itens do carrinho de compras:
         public List<CarrinhoCompraItem> GetCarrinhoCompraItens()
         {
             return CarrinhoCompraItems ??
