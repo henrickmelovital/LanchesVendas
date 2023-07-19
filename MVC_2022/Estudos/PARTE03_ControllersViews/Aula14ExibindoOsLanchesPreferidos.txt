@@ -1,1 +1,9 @@
-﻿
+﻿1º: HomeController - Lanches Preferidos:
+	1.1º: Criar a view model HomeViewModel e definir a lógica da view;
+	1.2º: Ajustar o código do método index do controlador HomeController;
+	1.3º: Ajustar o código da view Index para exibir o Carousel e os lanches preferidos;
+
+1º: Exibindo os Lanches Preferidos:
+	1.1º: Ajustar o código do 'HomeController' e view 'Index';
+
+

@@ -19,3 +19,5 @@
 			3.2.1.3º: 307 Temporaty Redirect;
 			3.2.1.4º: 308 Permanent Redirect;
 	3.3º: Método Action 'RemoverItemDoCarrinhoCompra';
+
+4º: Registrar o serviço da classe 'CarrinhoDeCompra', dentro da classe 'Program';

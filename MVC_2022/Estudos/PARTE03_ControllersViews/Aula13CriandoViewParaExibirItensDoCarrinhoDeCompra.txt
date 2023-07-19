@@ -1,1 +1,3 @@
-﻿1º: Criar uma View Index, baseada no carrinhoCompraController
+﻿1º: Cr1º: Exibindo os lanches preferidos:
+	1.1º: ViewResult, permite especificar a 'ViewName' e o Model;
+	1.2º: O controlador procura pela View com o mesmo nome do método Action quando não informamos o nome da View;
