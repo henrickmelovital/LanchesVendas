@@ -9,9 +9,9 @@ namespace MVC_2022.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly LancheRepository _lancheRepository;
+        private readonly ILancheRepository _lancheRepository;
 
-        public HomeController(LancheRepository lancheRepository)
+        public HomeController(ILancheRepository lancheRepository)
         {
             _lancheRepository = lancheRepository;
         }

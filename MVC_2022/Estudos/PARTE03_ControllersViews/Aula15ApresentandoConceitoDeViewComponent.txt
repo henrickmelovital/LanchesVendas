@@ -1,0 +1,32 @@
+﻿1º: View Components:
+	1.1º: Permitem criar funcionalidades semelhante a um método Action de um controlador independente de um controlador. (São semelhantes às Partial Views);
+
+2º: Consistem em duas partes:
+	2.1º: A classe (Derivada de um ViewComponent);
+	2.2º: Oresultado que ela retorna (uma View);
+
+3º: Criando uma View Component (VC)
+	3.1º: Uma classe VC pode ser criada:
+		3.1.1º: Dericando de ViewComponent;
+		3.1.2º: Decorando a classe com o atributo [ViewComponent];
+		3.1.3º: Criando uma classe onde o nome termina com o sufixo ViewComponent;
+	3.2º: Uma classe VC deve ser pública, não aninhada e não abstrata;
+	3.3º: A classe deve expor o m´rtodo publico InvokeAsync;
+	3.4º: Nome = nome_da_classeViewComponent, Ex.: TesteViewComponent; 
+	3.5º: O resultado que ela retorna (uma View);
+	3.6º: A view retornada deve ser criada na pasta:
+		3.6.1º: Views/Shared/Components/nome_vc;
+		3.6.2º: Onde nome 'nome_vc' é o nome do prefixo usado na vc criada;
+	3.7º: Exemplo: Uma view Component criada com o nome TesteViewComponent;
+	3.8º: Deverá ter a sua view criada na pasta: /Views/Shared/Components/Teste
+	3.9º: Se não for definido um nome especifico para view o nome padrão é Defualt.cshtml;
+
+4º: Usando uma ViewComponent:
+	4.1º: A partir de uma view:
+		4.1.1º: @Component.InvokeAsync("nome_vc". <tipo anonimo com parametros>)
+	4.2º: A partir da ASP.NET Core 1.1 podemos invocar uma VC usando uma tag helper:
+		4.2.1º: <vc:nome_vc parm=""></vc:nome_vc>
+	4.3º: Devemos usar a diretiva: @addTagHelper; nomeAssembly;
+	4.4º: A partir de um controlador:
+		4.4.1º: Return ViewComponent("nome_vc", new {param=""})
+

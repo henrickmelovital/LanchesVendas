@@ -1,11 +1,33 @@
 ﻿@model Lanche
 
 <div class="col-sm-4 col-md-4 col-lg-4">
+    <div class="card mb-4 box-shadow">
+        <!-- Imagem -->
+        <img src="@Model.ImagemUrl" class="card-img-top" alt="Imagem do Produto">
+
+        <div class="card-body">
+            <!-- Preço em Reais -->
+            <h3 class="card-title">Preço: @Model.Preco.ToString("c")</h3>
+
+            <!-- Nome do Produto -->
+            <h4>@Model.Nome</h4>
+
+            <!-- Descrição Curta -->
+            <p class="card-text">@Model.DescricaoCurta</p>
+
+            <!-- Botão para mais detalhes, caso seja necessário -->
+            <!-- <a href="#" class="btn btn-primary">Detalhes</a> -->
+        </div>
+    </div>
+</div>
+
+
+@*<div class="col-sm-4 col-md-4 col-lg-4">
     <p>
         <img src="@Model.ImagemUrl" class="img-fluid">
     </p>
 
-    @*Conversão para a moeda real*@
+    Conversão para a moeda real
     <h3>Preço: @Model.Preco.ToString("c")</h3>
 
     <h4>@Model.Nome</h4>
@@ -13,3 +35,4 @@
     <p>@Model.DescricaoCurta</p>
 
 </div>
+*@
