@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IDc4xv8QRN3Hj5w6YbLtNDbxQCiUZfR0oSt//6CZszw=",
+  "Hash": "eexAUlYM2Ll53irMmez9Bd3jud+Drq+kzPraBKueAzM=",
   "Source": "MVC_2022",
   "BasePath": "_content/MVC_2022",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\carousel13.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\cart-5-16.ico",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/cart-5-16.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cart-5-16.ico"
     },
     {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\delete.png",

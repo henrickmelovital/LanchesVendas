@@ -3,7 +3,7 @@
 
 2º: Consistem em duas partes:
 	2.1º: A classe (Derivada de um ViewComponent);
-	2.2º: Oresultado que ela retorna (uma View);
+	2.2º: O resultado que ela retorna (uma View);
 
 3º: Criando uma View Component (VC)
 	3.1º: Uma classe VC pode ser criada:

@@ -1,0 +1,11 @@
+﻿1º:ViewComponent - Exibir quantidade de itens no carrinho:
+
+2º: Criar a classe do View Component:
+	3.1º: Criar pasta Components no projeto;
+	3.2º: Criar classe CarinhoCompraResumo que deriva de ViewComponent;
+	3.3º: Definir o código do método;
+
+3º: Criar a view do ViewComponent:
+	3.1º: Criar a pasta Components dentro da pasta /Views/Shared;
+	3.2º: Criar a pasta CarrinhoCompraResumo dentro da pasta Components;
+	3.3º: Criar a view Defualt.cshtml nesta pasta CarrinhoCompraResumo;

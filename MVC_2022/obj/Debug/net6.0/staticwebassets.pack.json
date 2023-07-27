@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\images\\carousel13.jpg"
     },
     {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\cart-5-16.ico",
+      "PackagePath": "staticwebassets\\images\\cart-5-16.ico"
+    },
+    {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\delete.png",
       "PackagePath": "staticwebassets\\images\\delete.png"
     },
