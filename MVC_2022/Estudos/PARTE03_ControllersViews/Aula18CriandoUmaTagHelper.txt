@@ -1,0 +1,9 @@
+﻿1º: Criar TagHelper para enviar email:
+	1.1º: Criar uma pasta TagHelpers;
+	1.2º: Criar classe EmailTagHelper (herda de TagHelper);
+	1.3º: Sobrescrever o método Process (context, output);
+	1.4º: Adicionar em 'ViewImports' a addTagHelper, informando que existe uma TagHelper
+	1.4º: Criar item de menu Contato no arquivo _Layout;
+	1.5º: Criar controlador ContatoController;
+	1.6º: Criar método Action Index e a View Index;
+	

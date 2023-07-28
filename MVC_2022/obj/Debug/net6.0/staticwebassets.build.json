@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eexAUlYM2Ll53irMmez9Bd3jud+Drq+kzPraBKueAzM=",
+  "Hash": "hp/yaxVQCgfRydhW1EsIrbJT4hFacSphj5Hyg7kLf4s=",
   "Source": "MVC_2022",
   "BasePath": "_content/MVC_2022",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\25_TagHelper_Arquivos.txt",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/25_TagHelper_Arquivos.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\25_TagHelper_Arquivos.txt"
     },
     {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\carousel11.jpg",
@@ -170,6 +187,40 @@
       "OriginalItemSpec": "wwwroot\\images\\delete.png"
     },
     {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\Envelope-icon24.png",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/Envelope-icon24.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Envelope-icon24.png"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\faleconosco1.jpg",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/faleconosco1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\faleconosco1.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\Full-Cart-icon.png",
       "SourceId": "MVC_2022",
       "SourceType": "Discovered",
@@ -185,6 +236,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\Full-Cart-icon.png"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\Home-iconred.png",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/Home-iconred.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Home-iconred.png"
     },
     {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\imagensDoInsert\\cheeseburger1 (1).jpg",
@@ -321,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\imagensDoInsert\\mistoquente4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\phone-app-icon.png",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/phone-app-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\phone-app-icon.png"
     },
     {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\remove.ico",

@@ -1,0 +1,56 @@
+
+1- Código da classe EmailTagHelper
+-----------------------------------------------EmailaTagHelper
+using Microsoft.AspNetCore.Razor.TagHelpers;
+
+namespace LanchesMac.TagHelpers
+{
+    public class EmailTagHelper : TagHelper
+    {
+        public string Endereco { get; set; }
+        public string Conteudo { get; set; }
+
+        public override void Process(TagHelperContext context, TagHelperOutput output)
+        {
+            output.TagName = "a";
+            output.Attributes.SetAttribute("href", "mailto:" + Endereco);
+            output.Content.SetContent(Conteudo);
+        }
+    }
+}
+
+2- Código da View Index.cshtml
+----------------------------------------Index.cshtml
+<div class="container">
+    <img src="~/images/faleconosco1.jpg" alt="Fale conosco" />
+    <div class="jumbotron">
+        <h3>Queremos ouvir o que você tem a dizer</h3>
+        <p>
+            Se você tiver alguma dúvida ou sugestão fale conosco
+        </p>
+        <p>
+            <span>
+                <img src="~/images/Envelope-icon24.png" />
+            </span>
+            <h5><email endereco="macoratti@yahoo.com" conteudo="Enviar um e-mail"></email></h5>
+            <br />
+            <span>
+                <img src="~/images/phone-app-icon.png" />
+            </span>
+            <h5>(11) 9874-5566</h5>
+            <br />
+            <span>
+                <img src="~/images/Home-iconred.png" />
+            </span>
+            <h5>Av. Juscelino Kubichek 1000 - 03540-550 - São Paulo</h5>
+        </p>
+    </div>
+</div>
+-----------------------------------
+3- Código do arquivo _ViewImports.cshtml
+-----------------------------------------------------------
+@using LanchesMac
+@using LanchesMac.Models
+@using LanchesMac.ViewModels
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper LanchesMac.TagHelpers.*, LanchesMac
