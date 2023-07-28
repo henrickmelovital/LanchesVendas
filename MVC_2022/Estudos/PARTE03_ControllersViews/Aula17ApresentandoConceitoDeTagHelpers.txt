@@ -1,0 +1,35 @@
+﻿1º: Tag Helpers:
+	1.1º: As Tag Helpers permitem que o código do lado do servidor participe na criação e renderização de elementos HTML em arquivos Razer;
+	1.2º: Elas são uma sintaxe alternativa aos Html Helpers e obtém o mesmo resultado final gerando o código HTML;
+	1.3º: A sintaxe parece com HTML (elementos e atributos), mas é processado pelo Razor no servidor;
+	1.4º: Ex.:
+		1.4.1º: <input type="text" asp-for="Nome"/>
+		1.4.2º: <label asp-for="Email"></label>
+		1.4.3º: <input id="nome" name="nome" type="text" value=""/>
+		1.4.4º: <label for="Email">Email</label>
+	1.5º: A diretiva @addTagHelper torna as Tag Helpers disponíveis para uma view;
+	1.6º: Ao criar uma aplicação ASP.NET Core o arquivo Views/_ViewImports.cshtml que será herdado por todas as views da pasta /Views e subpastas;
+	1.7º: Será criado com o seguinte conteúdo:
+		1.7.1º: @addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+
+2º: Componentes Tag Helpers:
+	2.1º: Para a criação de elementos de formulários temos um conjunto de tag helpers descrits a seguir:
+		2.1.1º: Inpur Tag Helper;
+		2.1.2º: Text Area Tag Helper;
+		2.1.3º: Validation Tag Helper;
+		2.1.4º: Label Tag Helper;
+		2.1.5º: Select Tag Helper;
+	2.2º: O recurso do intellisense também está disponpivel para as TagHelpers;
+
+3º: Tag Helper Form:
+	3.1º: Gera o valor de atributos Action HTML<FORM>  para uma Action de um controlador MVC ou uma rota nomeada;
+	3.2º: Gera um Token de verificação de solicitação oculto para evitar a falsificação de solicitações entre sites (quando usado com o atributo [ValidateAntiToken] no método action HTTP Post);
+	3.3º: Fornece o atributo asp-route-<Nome do parâmetro>, no qual <Nome do parâmetro> é adicionado aos valores da rota. Os parâmetros routeValues para Html.BeginForm e Html.BeginRouteForm fornecem funcionalidades semelhante;
+	3.4º: Possui os HTML Helper alternativos: HTML Html.BeginForm e Html.BeginRouteForm;
+
+4º: Tag Helper Input:
+	4.1º: A Tag Helper Input vincula um elemento HTML <input> a uma expressão de modelo na sua view razor;
+	4.2º: A sintaxe usada é:
+		4.2.1º: <input asp-for="<Nome da expressão>"/>
+		
+
