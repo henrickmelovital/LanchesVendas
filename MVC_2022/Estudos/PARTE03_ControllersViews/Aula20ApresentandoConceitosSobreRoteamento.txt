@@ -1,0 +1,16 @@
+﻿1º: Roteamento de EndPoint:
+	1.1º: O roteamento é o processo pelo qual o framework ASP.NET Core inspeciona os requests HTTP de entrada e faz o mapeamento destes requests para executar os métodos Action Correspondentes do controlador;
+	1.2º: Este processo é chamado de roteamento de endpoint;
+
+2º: Responsabilidades do Roteamento:
+	2.1º: Mapear os requests de entrada para Action do Controlador;
+	2.2º: Gerar a URL de saída que corresponde ás ações do Controller;
+
+3º: Endpoint: 
+	3.1º: Um Endpoint é um objeto que contém tudo que você precisa para execitar um Request de entrada:
+		3.1.1º: Os metadados do Request;
+		3.1.2º: O delegate que a ASP.NET Core usa para processar o Request;
+	3.2º: Os endpoints são definidos pelo método 'UseEndpoints';
+		3.2.1º: Usando a configuração feita no arquivo Startup;
+
+4º: Configurando um Endpoint : Roteamento Convencional (MVC);

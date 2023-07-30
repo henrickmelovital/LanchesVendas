@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\images\\imagensDoInsert\\mistoquente4.jpg"
     },
     {
+      "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\lanchemac2.png",
+      "PackagePath": "staticwebassets\\images\\lanchemac2.png"
+    },
+    {
       "Id": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\phone-app-icon.png",
       "PackagePath": "staticwebassets\\images\\phone-app-icon.png"
     },

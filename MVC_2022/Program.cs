@@ -1,4 +1,4 @@
-using Microsoft.EntityFrameworkCore;
+ using Microsoft.EntityFrameworkCore;
 using MVC_2022.Context;
 using MVC_2022.Models;
 using MVC_2022.Repositories;
@@ -52,6 +52,7 @@ app.UseAuthorization();
 // Ativando os Middleswares 'builder.Services.AddMemoryCache();' e 'builder.Services.AddSession();':
 app.UseSession();
 
+// Rotas são definidas aqui:
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

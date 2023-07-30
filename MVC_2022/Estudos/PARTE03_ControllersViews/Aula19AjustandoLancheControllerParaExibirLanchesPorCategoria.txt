@@ -1,0 +1,4 @@
+﻿1º: Lanches por Categoria: Normal e Natural:
+	1.1º: Ajustar o código do método Action List para receber o parâmetro categoria e filtrar os dados pela categoria;
+	1.2º: Definir uma rota na aplicação para exibir Lanches por Categoria;
+

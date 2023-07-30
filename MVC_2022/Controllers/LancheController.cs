@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MVC_2022.Models;
 using MVC_2022.Repositories.Interface;
 using MVC_2022.ViewModels;
 
@@ -14,15 +15,42 @@ namespace MVC_2022.Controllers
             _lancheRepository = lancheRepository;
         }
 
-        public IActionResult List()
+        public IActionResult List(string categoria)
         {
             //var lanches = _lancheRepository.Lanches;
             //var totalLanches = lanches.Count();
 
             //return View(lanches);
-            var lancheListViewModel = new LancheListViewModel();
-            lancheListViewModel.Lanches = _lancheRepository.Lanches;
-            lancheListViewModel.CategoriaAtual = "Categoria Atual";
+            //var lancheListViewModel = new LancheListViewModel();
+            //lancheListViewModel.Lanches = _lancheRepository.Lanches;
+            //lancheListViewModel.CategoriaAtual = "Categoria Atual";
+
+            IEnumerable<Lanche> lanches;
+            string categoriaAtual = string.Empty;
+            if (string.IsNullOrEmpty(categoria))
+            {
+                lanches = _lancheRepository.Lanches.OrderBy(L => L.LancheId);
+                categoriaAtual = "Todos os lanches";
+            }
+            else
+            {
+                if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
+                {
+                    lanches = _lancheRepository.Lanches.Where(L => L.Categoria.CategoriaNome.Equals("Normal")).OrderBy(L => L.Nome);
+                }
+                else
+                {
+                    lanches = _lancheRepository.Lanches.Where(L => L.Categoria.CategoriaNome.Equals("Natural")).OrderBy(L => L.Nome);
+                    categoriaAtual = categoria;
+                }
+            }
+
+            var lancheListViewModel = new LancheListViewModel
+            {
+                Lanches = lanches,
+                CategoriaAtual = categoriaAtual
+            };
+
             return View(lancheListViewModel);
         }
     }

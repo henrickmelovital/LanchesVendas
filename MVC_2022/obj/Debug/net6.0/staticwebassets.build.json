@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hp/yaxVQCgfRydhW1EsIrbJT4hFacSphj5Hyg7kLf4s=",
+  "Hash": "qdXRXGMswF1ag1imxLu6cUoo62khLzoDskFSracYCd0=",
   "Source": "MVC_2022",
   "BasePath": "_content/MVC_2022",
   "Mode": "Default",
@@ -389,6 +389,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\imagensDoInsert\\mistoquente4.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\lanchemac2.png",
+      "SourceId": "MVC_2022",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\",
+      "BasePath": "_content/MVC_2022",
+      "RelativePath": "images/lanchemac2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lanchemac2.png"
     },
     {
       "Identity": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\wwwroot\\images\\phone-app-icon.png",
