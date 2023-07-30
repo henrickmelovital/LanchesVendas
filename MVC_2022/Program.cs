@@ -1,4 +1,4 @@
- using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MVC_2022.Context;
 using MVC_2022.Models;
 using MVC_2022.Repositories;
@@ -53,8 +53,25 @@ app.UseAuthorization();
 app.UseSession();
 
 // Rotas são definidas aqui:
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "test",
+        pattern: "testename",
+        defaults: new { controller = "teste", Action = "Index" }
+        );
+
+    endpoints.MapControllerRoute(
+        name: "admin",
+        pattern: "admin/{action=Index}/{id?}",
+        defaults: new { controller = "admin" }
+        );
+
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}"
+        );
+});
 
 app.Run();
