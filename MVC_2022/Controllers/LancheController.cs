@@ -59,5 +59,11 @@ namespace MVC_2022.Controllers
 
             return View(lancheListViewModel);
         }
+
+        public IActionResult Details(int lancheId)
+        {
+            var lanche = _lancheRepository.Lanches.FirstOrDefault(L => L.LancheId == lancheId);
+            return View(lanche);
+        }
     }
 }
