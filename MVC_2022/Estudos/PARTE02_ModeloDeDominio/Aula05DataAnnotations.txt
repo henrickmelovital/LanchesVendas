@@ -31,6 +31,7 @@
 	5.8º: 'RegularExpression' Permitir definir expressões regulares para validações especificas;
 	5.9º: 'Display' Especifica como os campos de dados são exibidos e formatados na View;
 	5.10º: 'DisplayFormat' Aplica um formato definido a uma propriedade que será exibido na View;
+	5.11º: 'ScaffoldColumn' Faz com que essa coluna não apareça na View;
 
 6º Atributos de modelagem de dados:
 	6.1º: 'Key(*)' Identifica a propriedae como uma chave primária na tabela
