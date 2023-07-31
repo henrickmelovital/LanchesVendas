@@ -9,27 +9,28 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Conexão com o banco de dados
+// Conexï¿½o com o banco de dados
 var connectionString = builder.Configuration.GetConnectionString("LanchesMac") ??
     throw new InvalidOperationException("Connection string 'LanchesMac' not found.");
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Registrando o serviço dos repositórios : Injeção de Dependência
+// Registrando o serviï¿½o dos repositï¿½rios : Injeï¿½ï¿½o de Dependï¿½ncia
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();
 builder.Services.AddTransient<ICategoriaRepository, CategoriaRepositorio>();
+builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
 // Registro a interface IHttpContextAcessor()
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
-// Registrando o serviço do carrinho de compra 
+// Registrando o serviï¿½o do carrinho de compra 
 builder.Services.AddScoped(SP => CarrinhoCompra.GetCarrinho(SP));
 
 // Habilitando os MiddleWares:
-// Ativar o uso do cache em memória através da interface IMemoryCache():
+// Ativar o uso do cache em memï¿½ria atravï¿½s da interface IMemoryCache():
 builder.Services.AddMemoryCache();
-// Invocando o método AddSession():
+// Invocando o mï¿½todo AddSession():
 builder.Services.AddSession();
 
 var app = builder.Build();
@@ -52,7 +53,7 @@ app.UseAuthorization();
 // Ativando os Middleswares 'builder.Services.AddMemoryCache();' e 'builder.Services.AddSession();':
 app.UseSession();
 
-// Rotas são definidas aqui:
+// Rotas sï¿½o definidas aqui:
 
 app.UseEndpoints(endpoints =>
 {

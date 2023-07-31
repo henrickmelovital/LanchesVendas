@@ -1,0 +1,5 @@
+1º: Implementando o Repositório para Pedidos:
+    1.1º: Criar a interface IPedidoRepository;
+    1.2º: Implementar a interface na classe PedidoRepository;
+    1.3º: Registrar o repositório como um serviço no método ConfigureServices;
+        1.3.1º: services.AddTransient<IPedidoRepository, PedidoRepository>();
