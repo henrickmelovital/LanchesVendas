@@ -17,13 +17,13 @@ namespace MVC_2022.Controllers
 
         public IActionResult List(string categoria)
         {
-            //var lanches = _lancheRepository.Lanches;
-            //var totalLanches = lanches.Count();
+            /*var lanches = _lancheRepository.Lanches;
+            var totalLanches = lanches.Count();
 
-            //return View(lanches);
-            //var lancheListViewModel = new LancheListViewModel();
-            //lancheListViewModel.Lanches = _lancheRepository.Lanches;
-            //lancheListViewModel.CategoriaAtual = "Categoria Atual";
+            return View(lanches);
+            var lancheListViewModel = new LancheListViewModel();
+            lancheListViewModel.Lanches = _lancheRepository.Lanches;
+            lancheListViewModel.CategoriaAtual = "Categoria Atual";*/
 
             IEnumerable<Lanche> lanches;
             string categoriaAtual = string.Empty;
@@ -34,15 +34,21 @@ namespace MVC_2022.Controllers
             }
             else
             {
-                if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
+                /* Método Antigo
+                 * if(string.Equals("Normal", categoria, StringComparison.OrdinalIgnoreCase))
                 {
                     lanches = _lancheRepository.Lanches.Where(L => L.Categoria.CategoriaNome.Equals("Normal")).OrderBy(L => L.Nome);
                 }
                 else
                 {
                     lanches = _lancheRepository.Lanches.Where(L => L.Categoria.CategoriaNome.Equals("Natural")).OrderBy(L => L.Nome);
-                    categoriaAtual = categoria;
-                }
+                    
+                }*/
+                lanches = _lancheRepository.Lanches
+                    .Where(L => L.Categoria.CategoriaNome.Equals(categoria))
+                    .OrderBy(C => C.Categoria);
+
+                categoriaAtual = categoria;
             }
 
             var lancheListViewModel = new LancheListViewModel

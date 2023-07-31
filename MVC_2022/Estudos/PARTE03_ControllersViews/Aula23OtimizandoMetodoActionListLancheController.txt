@@ -1,0 +1,4 @@
+﻿1º: Inserir uma nova categoria no banco de dados;
+
+2º: Ajustar o código da LancheController, para exibir todos os tipos de lanches cadastrados na base de dados;
+
