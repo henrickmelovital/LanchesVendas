@@ -57,15 +57,9 @@ app.UseSession();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
-        name: "test",
-        pattern: "testename",
-        defaults: new { controller = "teste", Action = "Index" }
-        );
-
-    endpoints.MapControllerRoute(
-        name: "admin",
-        pattern: "admin/{action=Index}/{id?}",
-        defaults: new { controller = "admin" }
+        name: "CategoriaFiltro",
+        pattern: "Lanche/{action}/{categoria?}",
+        defaults: new { Controller = "Lanche", Action = "List" }
         );
 
     endpoints.MapControllerRoute(

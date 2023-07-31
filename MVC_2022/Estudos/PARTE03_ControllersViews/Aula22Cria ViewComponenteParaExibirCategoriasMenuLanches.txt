@@ -1,0 +1,4 @@
+﻿1º Criar ViewComponent:
+	1.1º: Criar a classe CategoriaMenu na pasta Components;
+	1.2º: Criar a View Defualt na pasta /Shared/Components/CategoriaMenu;
+	1.3º: Usar a View Component - CategoriaMenu - no arquivo _Layout;

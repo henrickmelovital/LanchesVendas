@@ -2,3 +2,6 @@
 	1.1º: A ordem em que as rotas são registradas é muito importante;
 	1.2º: A rotas convencionais são avaliadas na ordem em que são configuradas;
 	1.3º: A avaliação inicia na parte superior e para quando encontra a primeira correspondência;
+
+2º: Criando a rota para exibir lanches por categoria:
+	2.1º:

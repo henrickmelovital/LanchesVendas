@@ -11177,25 +11177,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Developer-00\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Henrick Melo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+      "projectUniqueName": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
       "projectName": "MVC_2022",
-      "projectPath": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
-      "packagesPath": "C:\\Users\\Developer-00\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Developer-00\\Documents\\LanchesVendas\\MVC_2022\\obj\\",
+      "projectPath": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+      "packagesPath": "C:\\Users\\Henrick Melo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Developer-00\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Henrick Melo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -11204,10 +11202,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.telerik.com/v3/index.json": {}
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -11265,7 +11261,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }
