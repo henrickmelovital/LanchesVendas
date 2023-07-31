@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9sieNBiX9cIpFaYC29a98M/Pz/3kApiZq+XAOLOLNCIBOh+YWQj3jwQSCD0+IQhUE6tvFShRyaPAm6s+KEAehw==",
+  "dgSpecHash": "2rAd8wE0TYVE1aSygVQ6RmSSYO/WazU7cpK+ftX8Vj/aw/aZp0grBRaG5omj6hfd7huPKLPgLrPM+NuPRJw/3w==",
   "success": true,
-  "projectFilePath": "C:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+  "projectFilePath": "c:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Developer-00\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Developer-00\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,0 +1,3 @@
+1º: Localizar um lanche pelo nome:
+    1.1º: Criar um formulário usando a tag <form> com um <input type="text" .../> no arquivo _Layout;
+    1.2º: Criar o método Action Search no controlador LancheController;
