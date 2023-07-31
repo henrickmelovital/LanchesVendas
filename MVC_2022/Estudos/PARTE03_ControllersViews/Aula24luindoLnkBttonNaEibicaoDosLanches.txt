@@ -1,1 +1,1 @@
-﻿1º: Ajustar o códiog de _LancheResumo;
+﻿1º: Ajustar o código de _LancheResumo;

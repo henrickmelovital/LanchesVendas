@@ -1,0 +1,6 @@
+﻿1º: Expandindo o Modelo De Domínio:
+	1.1º: Criar classe Pedido;
+	1.2º: Criar classe PedidoDetalhe;
+	1.3º: Definir o relacionamento um-para-muitos entre Pedido e PedidoDetalhe;
+	1.4º: Definir o mapeamento ORM na classe AppDbContext usando DbSet<T>;
+	1.5º: Atualizar o esquema do banco de dados usando migration
