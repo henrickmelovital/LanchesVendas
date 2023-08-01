@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {}
+    "C:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {}
   },
   "projects": {
-    "c:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {
+    "C:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+        "projectUniqueName": "C:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
         "projectName": "MVC_2022",
-        "projectPath": "c:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+        "projectPath": "C:\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
         "packagesPath": "C:\\Users\\Developer-00\\.nuget\\packages\\",
-        "outputPath": "c:\\LanchesVendas\\MVC_2022\\obj\\",
+        "outputPath": "C:\\LanchesVendas\\MVC_2022\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
