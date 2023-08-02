@@ -1,0 +1,14 @@
+1º: Criar o método Action Chechout (POST) no controlador PedidoController:
+    1.1º: Obter os itens do carrinho de compra do cliente;
+    1.2º: Verificar se existem itens no carrinho (Se não existir inclui mensagem de erro);
+    1.3º: Calcucular o total de itens do pedido;
+    1.4º: Calcucular o valor total do pedido;
+    1.5º: Validar o Pedido e o PedidoDetalhe persistir na base de dados;
+    1.6º: Limpar o carrinho do cliente;
+    1.7º: Exibir a view CheckOutCompleto.cshtml exibindo os dados do cliente e do Pedido;
+
+2º: ModelState:
+    2.1º: É uma coleção de pares nome-valor, que é submetido ao servidor durante o POST;
+    2.2º: O ModelState tem dois propositos:
+        2.2.1º: Armazenar o valor que é submetido ao servidor;
+        2.2.2º: Armazenar os erros de validações;
