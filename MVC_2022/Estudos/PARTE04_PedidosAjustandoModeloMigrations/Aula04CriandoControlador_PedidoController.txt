@@ -1,0 +1,5 @@
+1º: PedidoController e Checkout:
+    1.1º: Criar o controlador PedidoController;
+    1.2º: Criar  o método Action Checkout (GET) no controlador PedidoController;
+    1.3º: Criar a View Checkout que apresenta o formulário para confirmar o pedido ao cliente;
+    1.4º: Criar o corpo método Action Checkout (POST) no controlador PedidoController;
