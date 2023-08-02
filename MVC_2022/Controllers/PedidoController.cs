@@ -65,7 +65,7 @@ public class PedidoController : Controller
             _carrinhoCompra.LimparCarrinho();
 
             // Exibe a View com dados do cliente e do pedido:
-            return View("~/View/Peido/CheckoutCompleto.cshtml", pedido);
+            return View("~/Views/Pedido/CheckoutCompleto.cshtml", pedido);
         }
         return View(pedido);
     }
