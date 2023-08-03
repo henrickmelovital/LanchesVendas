@@ -1,0 +1,14 @@
+﻿1º: ASP.NET Core Identity - Login:
+	1.1º: AccountController:
+		1.1.1º: UserManager<IdentityUser>
+		1.1.2º: SigninManager<IdentityUser:
+		1.1.3º: Login(GET) - Apresenta o formulário de login;
+		1.1.4º: Login(POST) - Processa as informações postadas no login;
+	1.2º: LoginViewModel:
+		1.2.1º: UserName;
+		1.2.2º: Password;
+		1.2.3º: ReturnUrl;
+
+2º: Implementando a Tela de Login:
+	2.1º: Implementar a LoginViewModel;
+	2.2º: Criar o Controlador 'AccountController';

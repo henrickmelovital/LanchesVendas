@@ -53,6 +53,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 // Ativando os Middleswares 'builder.Services.AddMemoryCache();' e 'builder.Services.AddSession();':
