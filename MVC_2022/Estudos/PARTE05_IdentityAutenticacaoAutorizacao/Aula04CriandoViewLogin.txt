@@ -1,0 +1,12 @@
+﻿Tag Helpers usadas na validação:
+
+1º: asp-validation-summary:
+	1.1º: É usada para exibir um resumo das mensagens de validação no formulário;
+	asp-validation-summary		Mensagens de validação exibida
+	All							Propriedades e Model
+	ModelOnly					Model
+	None						None
+
+2º: asp-validation-for:
+	2.1º: Anexa as mensagens de erro de validação no campo de entrada da propriedade de modelo especificadas;
+	2.2º: Quando ocorre um erro de validação do lado do cliente, o Jquery exibe a mensagem de erro no elemento <span>

@@ -800,3 +800,4 @@ C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022\obj\Debug\net6.0\refint\M
 C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022\obj\Debug\net6.0\MVC_2022.pdb
 C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022\obj\Debug\net6.0\MVC_2022.genruntimeconfig.cache
 C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022\obj\Debug\net6.0\ref\MVC_2022.dll
+C:\Users\Henrick Melo\Documents\LanchesVendas\MVC_2022\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
