@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using MVC_2022.Context;
 using MVC_2022.Models;
@@ -15,6 +16,10 @@ var connectionString = builder.Configuration.GetConnectionString("LanchesMac") ?
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>()
+    .AddDefaultTokenProviders();
 
 // Registrando o servi�o dos reposit�rios : Inje��o de Depend�ncia
 builder.Services.AddTransient<ILancheRepository, LancheRepository>();

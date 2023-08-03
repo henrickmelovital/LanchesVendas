@@ -5,4 +5,36 @@
 		1.2.1º: Microsoft.AspNetCore.IdentityFrameworkCore
 	1.3º: Utilizar um banco de dados SQL Server para armazenar as informações dos usuários como nome, senha, permissões, etc.
 	1.4º: Criar o banco de dados e as tabelas usando a abordagem Code-First;
-	1.5º: A nossa implementação vai criar as tabelas do Identity no banco da aplicação LancheDatabase
+	1.5º: A nossa implementação vai criar as tabelas do Identity no banco da aplicação LancheDatabase;
+
+2º: ASP.NET Core Identity - Arquivo de Contexto:
+	2.1º: Ajustar o Arquivo AppDbContext;
+	2.2º: o IdentityDbContext fornece todas as propriedades DbSet necessárias para gerenciar as tabelas de identidade no SQL Server;
+	2.3º: A classe IdentityUser é fornecida pela ASP.NET Core e contém propriedades para UserName, PasswordHash, Email etc. Essa é a classe usada pelo Identity para gerenciar usuários registrados do seu aplicativo;
+
+3º: ASP.NET Core Identity - Arquivo Startup:
+	3.1º: IdentityRole é uma classe interna do Identity e fornece informações sobre perfis do usuário;
+	3.2º: AddEntityFrameworkStores - Permite armazenar e recuperar informações de usuários e do perfil usando o EF Core para SQL Server;
+	3.3º: AddDefualtTokenProviders - Inclui provedores de token padrão para redefinir senha, alterar email, número de telefone e geração de token para autenticação em dois fatores;
+	3.4º: Incluir um Middleware de autenticação:
+		3.4.1º: app.UseAuthentication:
+			3.4.1.1º: O middleware de autenticação (UseAuthentication) tenta autenticar o usuário antes de ele ter acesso aos recursos seguros;
+		3.4.2º: app.UseAuthorization():
+			3.4.2.1º: Middleware de autorização (UseAuthorization) autoriza um usuário a acessar recursos seguros;
+
+4º: ASP.NET Core - Ordem de execução do Middlewares - Pipeline de processamento do request completo para ASP.NET Core MVC:
+	4.1º: Resquest;
+	4.2º: ExcepetionHandler;
+	4.3º: HSTS;
+	4.4º: HttpRedirection;
+	4.5º: Static Files;
+	4.6º: Routing;
+	4.7º: CORS;
+	4.8º: Authentication;
+	4.9º: Authorization;
+	4.10º: Custom1, Custom2, etc;
+	4.11º: Endpoint;
+
+5º: ASP.NET Core Identity - Criando as tabelas do Identity:
+	5.1º: add-migration AdicionarIdentity;
+	5.2º: update-database;
