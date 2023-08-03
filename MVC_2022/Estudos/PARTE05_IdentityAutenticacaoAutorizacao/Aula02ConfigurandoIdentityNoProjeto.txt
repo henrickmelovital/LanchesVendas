@@ -1,0 +1,8 @@
+﻿1º: ASP .NET Core Identity:
+	1.1º: É o sistema de associação que adiciona recursos de login e autenticação:
+		1.1.1º: Microsoft.AspNetCore.Identity;
+	1.2º: É o provedor de identidade ASP.NET Core usa o Entity Framework Core;
+		1.2.1º: Microsoft.AspNetCore.IdentityFrameworkCore
+	1.3º: Utilizar um banco de dados SQL Server para armazenar as informações dos usuários como nome, senha, permissões, etc.
+	1.4º: Criar o banco de dados e as tabelas usando a abordagem Code-First;
+	1.5º: A nossa implementação vai criar as tabelas do Identity no banco da aplicação LancheDatabase

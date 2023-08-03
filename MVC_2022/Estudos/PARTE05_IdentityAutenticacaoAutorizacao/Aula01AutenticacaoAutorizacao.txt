@@ -1,0 +1,19 @@
+1º: Autenticação:
+    1.1º: Verificação de uma identidade feita pela comparação das credencias apresentadas com outras pré-definidas. (Quem é você?);
+
+2º: Autorização:
+    2.1º: Ocorre após a Autenticação e permite atribuir e definir privilégios ao sujeito autenticado. (O que você pode fazer?);
+
+3º: Autenticação - Tipos:
+    3.1º: None: No authentication;
+    3.2º: Individual: Individual authentication;
+    3.3º: IndividualB2C: Individual authentication with Azure AD B2C;
+    3.4º: SingleOrg: Organization authentication for single tenant;
+    3.5º: MultiOrg: Organization authentication for multiple tenants;
+    3.6º: Windows: Windows authentication;
+
+4º: Autenticação - Usar o template padrão:
+    4.1º: No Visual Studio configurar a Autenticação para usar o tipo de Autenticação : Individual Accounts;
+    4.2º: ASP .NET Core Identity - Suporte ao login e gerenciamento de usuários e senhas;
+    4.3º: Linha de comando com NET CLI e VS Code:
+        4.3.1º: dotnet new mvc --auth Individual -o mvc1
