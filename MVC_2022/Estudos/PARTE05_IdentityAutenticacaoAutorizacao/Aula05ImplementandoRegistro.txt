@@ -1,0 +1,9 @@
+﻿ASP.NET Core Identity - Registrer
+
+1º: AccountController:
+	1.1º: UserManager<IdentityUser>
+	1.2º: SignInManager<IdentityUser>
+	1.3º: Registrer(GET) - Apresenta o formulário de registro;
+	1.4º: Register(POST) - Processa as informações postadas no registro;
+
+2º: AntiForgeryToken (evita ataques CSRF)
