@@ -6,4 +6,14 @@
 	1.3º: Registrer(GET) - Apresenta o formulário de registro;
 	1.4º: Register(POST) - Processa as informações postadas no registro;
 
-2º: AntiForgeryToken (evita ataques CSRF)
+2º: AntiForgeryToken (evita ataques CSRF):
+	2.1º: [ValidateAntiForgeryToken] - Evita ataques CSRF - Cross Site Request Forgery - Falsificação de requisições entre sites;
+	2.2º: O cliente solicita uma página HTML que contém um formulário:
+	2.3º: A ASP.NET Core Inclui dois tokens no response:
+		2.3.1º: Um token é enviado como um cookie HTTP cifrado;
+		2.3.2º: O outro é colocado em um campo oculto do formulário (hidden);
+	2.4º: Os tokens são gerados aleatoriamente para que um hacker não consiga adivinhar os valores;
+	2.5º: Quando o cliente envia o formulário, ele deve enviar os dois tokens de vlta ao servidor;
+	2.6º: O cliente envia o token de cookie e o token fo formulário dentro dos dados do formulário;
+	2.7º: Se uma solicitação não incluir os dois tokens que devem ser iguais, o servidor não permitirá a solicitação;
+	2.8º: O atributo [ValidateAntiForgeryToken] é usado para validar o oken gerado na View
