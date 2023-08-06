@@ -1,1 +1,11 @@
-﻿
+﻿1º: ASP.NET Core Identity - Logout:
+	1.1º: AccountController:
+		1.1.1º: UserManager<IdentityUser>;
+		1.1.2º: SignInManager<IdentityUser>;
+	1.2º: Logout(POST):
+		1.2.1º: Realizar o logout e redirecionar o usuário;
+	1.3º: _LoginPartial.cshtml
+		1.3.1º: Exibir os links para registro e Login/Logout na barra de navegação;
+	1.4º: Se o usuário não estiver logado, vamos exibir os links para Login e Registro;
+	1.5º: Se o usuário estiverlogado, vamos ocultar os links para login e registro e exibir o link para Logout seguido do nome do usuário;
+	1.6º: O método SignOutAsync() faz o logout do usuário;
