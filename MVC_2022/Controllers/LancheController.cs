@@ -91,7 +91,7 @@ namespace MVC_2022.Controllers
                 }
             }
 
-            return View("~/Views/Lanches/List.cshtml", new LancheListViewModel
+            return View("~/Views/Lanche/List.cshtml", new LancheListViewModel
             {
                 Lanches = lanches,
                 CategoriaAtual = categoriaAtual

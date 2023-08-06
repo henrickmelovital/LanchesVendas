@@ -1,0 +1,11 @@
+1º: Configurando os padrões do Identity:
+    builder.Services.Configure<IdentityOptions>(options => {
+        // Configurações padrão do Identity
+        options.Password.RequireDigit = false;
+        options.Password.RequireLowercase = false;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequiredLength = 6;
+        options.Password.RequiredUniqueChars = 1;
+    });    
+
