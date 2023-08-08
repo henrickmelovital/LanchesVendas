@@ -9,3 +9,8 @@
 	1.4º: Se o usuário não estiver logado, vamos exibir os links para Login e Registro;
 	1.5º: Se o usuário estiverlogado, vamos ocultar os links para login e registro e exibir o link para Logout seguido do nome do usuário;
 	1.6º: O método SignOutAsync() faz o logout do usuário;
+	1.7º: Remove todos os valores (Conteúdo) dos objetos na Session;
+	1.8º: A sessão com a mesma chave ainda continua viva;
+
+2º: View Injection:
+	2.1º: Permite injetar dependência em uma view usando a palavra-chave @Inject.

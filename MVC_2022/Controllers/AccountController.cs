@@ -77,5 +77,21 @@ namespace MVC_2022.Controllers
             }
             return View(registroVm);
         }
+
+        public IActionResult Logout()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Logout(LoginViewModel logoutVM)
+        {
+            // Limpar todos os valores da Session:
+            HttpContext.Session.Clear();
+            HttpContext.User = null;
+            await _signInManager.SignOutAsync();
+
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
