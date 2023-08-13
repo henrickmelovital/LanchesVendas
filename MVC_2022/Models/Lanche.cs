@@ -9,9 +9,6 @@ namespace MVC_2022.Models
         [Key]
         public int LancheId { get; set; }
 
-        [Required(ErrorMessage = "O nome do lanche deve ser informado")]
-        [Display(Name = "Nome do lanche")]
-        [StringLength(80, MinimumLength = 10, ErrorMessage = "O {0} deve ter no minimo {1} e no máximo {2}")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "A descrição do lanche deve ser informada")]
