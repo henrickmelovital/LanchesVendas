@@ -22,7 +22,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddDefaultTokenProviders();
 
 // Configurando os padrões para validar uma senha:
-builder.Services.Configure<IdentityOptions>(options => {
+builder.Services.Configure<IdentityOptions>(options =>
+{
     // Configurações padrão do Identity
     options.Password.RequireDigit = false;
     options.Password.RequireLowercase = false;
@@ -74,6 +75,11 @@ app.UseSession();
 
 app.UseEndpoints(endpoints =>
 {
+    endpoints.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+        );
+
     endpoints.MapControllerRoute(
         name: "CategoriaFiltro",
         pattern: "Lanche/{action}/{categoria?}",

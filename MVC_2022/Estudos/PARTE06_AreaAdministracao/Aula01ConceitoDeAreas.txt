@@ -1,0 +1,57 @@
+﻿1º: Areas - Conceito:
+	1.1º: As áreas podem ser definidas como unidade funcionais menores em um projeto ASP.NET Core MVC com seu próprio conjunto de controladores, Views e Modelo;
+	1.2º: Elas são usadas para organizar funcionalidades relacionadas em um grupo separado e ajudam a gerenciar aplicações de uma maneira melhor separando cada aspecto funcional em diferentes Áreas;
+
+2º: Areas - Quando usar:
+	2.1º: Quando sua aplicação for composta de múltiplos componentes funcionais de alto nível que podem ser separados logicamente;
+	2.2º: Se você deseja particionar seu projeto MVC para que cada área funcional possar ser tratada de forma independente;
+
+3º: Areas - Características:
+	3.1º: Uma aplicação ASP.NET Core MVC pode possuir qualquer número de Áreas;
+	3.2º: Cada área possui seus próprios controladores, models e views;
+	3.3º: Suporta múltiplos controladores com o mesmo nome em área diferentes;
+
+4º: Areas - Utilização I:
+	4.1º: A seguir temos que definir uma rota para trabalhar com a nova área criada:
+		app.UseEndpoints(endpoints =>{
+			endopoints.MapControllerRoute(
+				name: "AdminArea",
+				pattern: "{area:exist}/{controller=Admin}/{action=Index}/{id?}"
+			);
+		});
+	4.2º: Configuração com um nome de área genérico que funciona para qualquer área que não estiver definida explicitamente;
+
+5º: Areas - Utilização II:
+	5.1º: Definindo uma rota para uma área especifica e a seguir uma rota genérica:
+		app.UseEndpoints(endpoints =>{
+
+			endpoints.MapControllerRoute(
+				name: "Produtos",
+				areaName: "Produtos",
+				pattern: "Produtos"
+			)
+
+			endopoints.MapControllerRoute(
+				name: "AdminArea",
+				pattern: "{area:exist}/{controller=Admin}/{action=Index}/{id?}"
+			);
+		});
+
+6º: Area - Utilização III:
+	6.1º: Decorar o Controlador com o atributo [Area("nome_area")] definindo o nome da área:
+		[Area("Admin")]
+		public class AdminCategoriaController : Controller
+		{
+			.....
+		}
+
+7º: Areas - Definindo links/rotas para áreas:
+	7.1º: Usar o atributo asp-area para informar que um link/rota se refere a uma área:
+		<a class="nav-link text-light" asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin</a>
+		<a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+
+=============================================================================================
+
+1º: Implementando o Areas:
+	1.1º: Gerar com scaffold o Area;
+	1.2º: Adicionar as rotas para o Admin
