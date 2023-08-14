@@ -1,0 +1,24 @@
+﻿1º: Verificar se o usuário está autenticado:
+	1.1º: Via código;
+	2º: Usar o atributo [Authorize] no Controller ou na Action;
+		2.1º: Permite o acesso somente de usuários autenticados;
+		2.2º: Verifica somente se o usuário está autenticado;
+		2.3º: Verifica se o usuário está autenticado e se pertence ao perfil Admin;
+
+2º: Permitir o acesso anônimo:
+	2.1º: User o atributo [AllowAnonymous] no Controller ou na Action;
+	2.2º: Permite o acesso a usuários não autenticados;
+	2.3º: Verifica se o usuário está autenticado e restringe o acesso a todos os métodos Action deste controlador;
+	2.4º: Permite o acesso a usuário não autenticado a este método Action;
+
+3º: Política de acesso do site:
+	3.1º:Usuários não autenticados (anônimos):
+		3.1.1º: A página principal do site e todas as suas opções;
+		3.1.2º: As páginas dos produtos: lanches, etc.
+		3.1.3º: A página do Contato;
+	3.2º: Usuários autenticados:
+		3.2.1º: Incluir itens no carrinho de compra;
+		3.2.2º: Remover um item do carrinho;
+		3.2.3º: Confirmar e finalizar o pedidp;
+	3.3º: Usuários do perfil Admin:
+		3.3.1º: Acessar a área de Administração;
