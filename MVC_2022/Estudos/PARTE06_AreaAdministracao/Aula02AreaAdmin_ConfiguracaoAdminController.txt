@@ -1,0 +1,4 @@
+﻿1º: Criar as Views da área Admin:
+
+2º: Criar o controlador AdminController:
+	2.1º: Criar o método Action Index e a View Index;
