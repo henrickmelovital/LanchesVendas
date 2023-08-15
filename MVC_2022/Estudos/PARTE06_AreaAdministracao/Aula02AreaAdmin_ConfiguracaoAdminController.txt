@@ -2,3 +2,7 @@
 
 2º: Criar o controlador AdminController:
 	2.1º: Criar o método Action Index e a View Index;
+	2.2º: Criar uma '_Layout' e modificar ela;
+	2.3º: Criar uma '_ViewImports' e modificar ela;
+	2.4º: Criar uma '_ViewStart' e modificar;
+	2.5º: Criar o 'AdminController' e definir que esse controlador está na área Admin;

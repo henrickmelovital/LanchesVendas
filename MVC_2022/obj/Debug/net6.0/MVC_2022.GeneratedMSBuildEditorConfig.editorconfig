@@ -9,89 +9,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MVC_2022
 build_property.RootNamespace = MVC_2022
-build_property.ProjectDir = C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022\
+build_property.ProjectDir = C:\Users\Henrick Melo\Documents\LanchesVendas\MVC_2022\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Developer-00\Documents\LanchesVendas\MVC_2022
+build_property.MSBuildProjectDirectory = C:\Users\Henrick Melo\Documents\LanchesVendas\MVC_2022
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Areas/Area/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXJlYVxWaWV3c1xTaGFyZWRcX0xheW91dC5jc2h0bWw=
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Areas/Areas/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXJlYXNcVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Account/Login.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Areas/Areas/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXJlYXNcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Areas/Areas/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXJlYXNcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Areas/Areas/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQXJlYXNcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Account/Register.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/CarrinhoCompra/Index.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/CarrinhoCompra/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9Db21wcmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Contato/Index.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Contato/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Home/Index.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Lanche/Details.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Lanche/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2hlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Lanche/List.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Lanche/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2hlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Pedido/Checkout.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Pedido/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Pedido/CheckoutCompleto.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Pedido/CheckoutCompleto.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0Q29tcGxldG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FycmluaG9Db21wcmFSZXN1bW9cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/Components/CategoriaMenu/Default.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/Components/CategoriaMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcmlhTWVudVxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/Error.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/_Carousel.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/_LancheResumo.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/_LancheResumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYW5jaGVSZXN1bW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/_ViewImports.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/_ViewStart.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Developer-00/Documents/LanchesVendas/MVC_2022/Views/Shared/_Layout.cshtml]
+[C:/Users/Henrick Melo/Documents/LanchesVendas/MVC_2022/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-com8352sj1
