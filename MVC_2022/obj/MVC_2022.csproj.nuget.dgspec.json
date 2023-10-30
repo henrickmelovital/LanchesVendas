@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {}
+    "C:\\Users\\henri\\OneDrive\\Documentos\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {
+    "C:\\Users\\henri\\OneDrive\\Documentos\\LanchesVendas\\MVC_2022\\MVC_2022.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+        "projectUniqueName": "C:\\Users\\henri\\OneDrive\\Documentos\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
         "projectName": "MVC_2022",
-        "projectPath": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
-        "packagesPath": "C:\\Users\\Henrick Melo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Henrick Melo\\Documents\\LanchesVendas\\MVC_2022\\obj\\",
+        "projectPath": "C:\\Users\\henri\\OneDrive\\Documentos\\LanchesVendas\\MVC_2022\\MVC_2022.csproj",
+        "packagesPath": "C:\\Users\\henri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\henri\\OneDrive\\Documentos\\LanchesVendas\\MVC_2022\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Henrick Melo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\henri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -89,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
